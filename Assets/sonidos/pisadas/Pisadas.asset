@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d94142adf8b97b4595e14ce1c61f832, type: 3}
+  m_Name: Pisadas
+  m_EditorClassIdentifier: 
+  sonidos:
+  - {fileID: 8300000, guid: a84260a08a9fee540a683912843cb7d2, type: 3}
+  - {fileID: 8300000, guid: cfb1f0b172cc4c041b16c688b863f66a, type: 3}
+  - {fileID: 8300000, guid: e78aff84133414d469d6b56fc773c2af, type: 3}
+  - {fileID: 8300000, guid: f5ff71399e1427643a4ea5216ee56712, type: 3}
+  - {fileID: 8300000, guid: 443bbabe2d616704989c24fc224f4852, type: 3}
+  - {fileID: 8300000, guid: e4fef424b79fb4e40946c6037b5fdadb, type: 3}
+  - {fileID: 8300000, guid: b27b11b827ba8484ebf20ae4e30a3ced, type: 3}
+  - {fileID: 8300000, guid: 972f418f8ffc31e469ff17894d51c2ef, type: 3}
+  - {fileID: 8300000, guid: e4d6e8c7914edfc449a33af2b3cc5b24, type: 3}

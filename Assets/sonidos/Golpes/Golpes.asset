@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d94142adf8b97b4595e14ce1c61f832, type: 3}
+  m_Name: Golpes
+  m_EditorClassIdentifier: 
+  sonidos:
+  - {fileID: 8300000, guid: 304ee72b0804238438111f7352e0d166, type: 3}
+  - {fileID: 8300000, guid: c5098f66ce5c8c94280f2a3e3a1d3945, type: 3}
+  - {fileID: 8300000, guid: 02d15dc02f57e3b41b7ac35fd4f65ad3, type: 3}
