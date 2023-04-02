@@ -1,0 +1,767 @@
+fileFormatVersion: 2
+guid: 168a2594d1dc99a419af175f9a4b5349
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: b2a9591990af98743ba3ff7cf1000886, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 1
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 1
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  spriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 0, y: 0}
+    spritePosition: {x: 0, y: 0}
+  mosaicSpriteImportData: []
+  rigSpriteImportData:
+  - name: "Rect\xE1ngulo 3"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 175
+      height: 225
+    spriteID: 343e7b5ddec7a3f4a80b55336b286c90
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 4}
+    spritePosition: {x: 699, y: 379}
+  - name: "Rect\xE1ngulo 2"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 237
+      width: 112
+      height: 132
+    spriteID: ec4973975024c2443b4978b168e012aa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 237}
+    spritePosition: {x: 730, y: 602}
+  - name: "Rect\xE1ngulo 5"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 460
+      y: 249
+      width: 21
+      height: 10
+    spriteID: 741095feb5d94b24b8b0c0828e7e6c24
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 460, y: 249}
+    spritePosition: {x: 793, y: 762}
+  - name: "Rect\xE1ngulo 5"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 460
+      y: 267
+      width: 21
+      height: 10
+    spriteID: aa99589b9433d534f9fe5edd23568991
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 460, y: 267}
+    spritePosition: {x: 757, y: 762}
+  - name: "Rect\xE1ngulo 4"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 954
+      width: 78
+      height: 49
+    spriteID: 00f94e29825b66b468b1d47e40f4847a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 954}
+    spritePosition: {x: 747, y: 724}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 4
+      width: 133
+      height: 57
+    spriteID: 510a6f7b19e75744e8d84adbb6100d13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 318, y: 4}
+    spritePosition: {x: 825, y: 589}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 688
+      width: 83
+      height: 125
+    spriteID: b151ba7588777ee4eacd31bb7a03c615
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 688}
+    spritePosition: {x: 939, y: 485}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 249
+      width: 134
+      height: 33
+    spriteID: 866b6aa17c5d618498b80ef210e41714
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 318, y: 249}
+    spritePosition: {x: 838, y: 647}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 377
+      width: 114
+      height: 99
+    spriteID: 9e57dd9245f4341469762380ed323ca1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 377}
+    spritePosition: {x: 956, y: 582}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 187
+      y: 4
+      width: 123
+      height: 84
+    spriteID: 6fdb5cda47a43cd4e958bc93ca8d8f47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 187, y: 4}
+    spritePosition: {x: 819, y: 663}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 134
+      width: 133
+      height: 52
+    spriteID: 4e7a4a36f8519c84dbe0b35940feb1f1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 318, y: 134}
+    spritePosition: {x: 926, y: 696}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 69
+      width: 133
+      height: 57
+    spriteID: 543bba29f33a1a541b63e14663dde577
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 318, y: 69}
+    spritePosition: {x: 627, y: 595}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 821
+      width: 83
+      height: 125
+    spriteID: ba84468dfa17b2b48922e0c35990a1ad
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 821}
+    spritePosition: {x: 563, y: 491}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 290
+      width: 134
+      height: 33
+    spriteID: 4626a3b83de184b418081ee180e56b7a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 318, y: 290}
+    spritePosition: {x: 605, y: 646}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 484
+      width: 114
+      height: 99
+    spriteID: 264badc809bf4e74589bbddb0f8f5c21
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 484}
+    spritePosition: {x: 507, y: 581}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 591
+      width: 121
+      height: 89
+    spriteID: d9a173360d917734d93746bd68f58896
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 4, y: 591}
+    spritePosition: {x: 632, y: 655}
+  - name: "Rect\xE1ngulo 1"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 318
+      y: 194
+      width: 133
+      height: 47
+    spriteID: 2933a60f7b8474c43a329b7575534daf
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: 318, y: 194}
+    spritePosition: {x: 515, y: 698}
+  characterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  sharedRigSpriteImportData: []
+  sharedRigCharacterData:
+    bones: []
+    parts: []
+    dimension: {x: 0, y: 0}
+    characterGroups: []
+    boneReadOnly: 0
+  platformSettings: []
+  mosaicLayers: 1
+  characterMode: 1
+  documentPivot: {x: 0, y: 0}
+  documentAlignment: 7
+  importHiddenLayers: 0
+  layerMappingOption: 2
+  generatePhysicsShape: 0
+  paperDollMode: 0
+  keepDupilcateSpriteName: 1
+  skeletonAssetReferenceID: 
+  spriteCategoryList:
+    categories: []
+  spritePackingTag: 
+  resliceFromLayer: 0
+  mosaicPSDLayers: []
+  rigPSDLayers:
+  - name: cuerpo
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 76240c1ec2f8e2246a0d39e9fc667af6
+    layerID: 28
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Rect\xE1ngulo 3"
+    spriteName: "Rect\xE1ngulo 3"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: 343e7b5ddec7a3f4a80b55336b286c90
+    layerID: 35
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Rect\xE1ngulo 2"
+    spriteName: "Rect\xE1ngulo 2"
+    isGroup: 0
+    parentIndex: 0
+    spriteID: ec4973975024c2443b4978b168e012aa
+    layerID: 30
+    mosaicPosition: {x: 4, y: 237}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: cabeza
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: d0368b7fe28e6114b99e0c0f7a06b269
+    layerID: 37
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Rect\xE1ngulo 5"
+    spriteName: "Rect\xE1ngulo 5"
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 741095feb5d94b24b8b0c0828e7e6c24
+    layerID: 41
+    mosaicPosition: {x: 460, y: 249}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Rect\xE1ngulo 5"
+    spriteName: "Rect\xE1ngulo 5"
+    isGroup: 0
+    parentIndex: 3
+    spriteID: aa99589b9433d534f9fe5edd23568991
+    layerID: 39
+    mosaicPosition: {x: 460, y: 267}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Rect\xE1ngulo 4"
+    spriteName: "Rect\xE1ngulo 4"
+    isGroup: 0
+    parentIndex: 3
+    spriteID: 00f94e29825b66b468b1d47e40f4847a
+    layerID: 36
+    mosaicPosition: {x: 4, y: 954}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pata 6
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 896985e256d7847448d399d57a42f3e0
+    layerID: 34
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 7
+    spriteID: 510a6f7b19e75744e8d84adbb6100d13
+    layerID: 33
+    mosaicPosition: {x: 318, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 7
+    spriteID: b151ba7588777ee4eacd31bb7a03c615
+    layerID: 32
+    mosaicPosition: {x: 4, y: 688}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pata 5
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: c909a37ed8c944340b45327b14cb60c2
+    layerID: 23
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 866b6aa17c5d618498b80ef210e41714
+    layerID: 22
+    mosaicPosition: {x: 318, y: 249}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 10
+    spriteID: 9e57dd9245f4341469762380ed323ca1
+    layerID: 21
+    mosaicPosition: {x: 4, y: 377}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pata 4
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: eeb87a90f1ebdf5458d11a087cc5ce82
+    layerID: 19
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 6fdb5cda47a43cd4e958bc93ca8d8f47
+    layerID: 18
+    mosaicPosition: {x: 187, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 13
+    spriteID: 4e7a4a36f8519c84dbe0b35940feb1f1
+    layerID: 17
+    mosaicPosition: {x: 318, y: 134}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pata 3
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: c21a8a2c268be6d4b98df9b758c3c917
+    layerID: 15
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 16
+    spriteID: 543bba29f33a1a541b63e14663dde577
+    layerID: 14
+    mosaicPosition: {x: 318, y: 69}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 16
+    spriteID: ba84468dfa17b2b48922e0c35990a1ad
+    layerID: 13
+    mosaicPosition: {x: 4, y: 821}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pata 2
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: 1313870aeb0445f48b9fba491b94cf6a
+    layerID: 8
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 4626a3b83de184b418081ee180e56b7a
+    layerID: 11
+    mosaicPosition: {x: 318, y: 290}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 19
+    spriteID: 264badc809bf4e74589bbddb0f8f5c21
+    layerID: 10
+    mosaicPosition: {x: 4, y: 484}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: pata 1
+    spriteName: 
+    isGroup: 1
+    parentIndex: -1
+    spriteID: eaa4ffa2b1b4bda46985057cde6e9812
+    layerID: 6
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 22
+    spriteID: d9a173360d917734d93746bd68f58896
+    layerID: 5
+    mosaicPosition: {x: 4, y: 591}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "Rect\xE1ngulo 1"
+    spriteName: "Rect\xE1ngulo 1"
+    isGroup: 0
+    parentIndex: 22
+    spriteID: 2933a60f7b8474c43a329b7575534daf
+    layerID: 3
+    mosaicPosition: {x: 318, y: 194}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: Capa 0
+    spriteName: 
+    isGroup: 0
+    parentIndex: -1
+    spriteID: 58664a4070ce1894f85aa16dcdaa6d37
+    layerID: 42
+    mosaicPosition: {x: 0, y: 0}
+    flatten: 0
+    isImported: 0
+    isVisible: 0
+  sharedRigPSDLayers: []
+  pSDLayerImportSetting: []
+  generateGOHierarchy: 0
+  textureAssetName: 
+  prefabAssetName: 
+  spriteLibAssetName: 
+  skeletonAssetName: 
+  secondarySpriteTextures: []
