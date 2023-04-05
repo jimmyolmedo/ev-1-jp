@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public UnityEvent onGameStart, onGameOver, onGameRestart;
     public static GameManager gm;
 
-
+    public IntVariable madera;
 
     private void Awake()
     {
@@ -29,6 +29,11 @@ public class GameManager : MonoBehaviour
     public void OnGameRestart()
     {
         onGameRestart.Invoke();
+    }
+
+    public void agregarMadera(int _cantidad)
+    {
+        madera.valor += _cantidad;
     }
 
 }

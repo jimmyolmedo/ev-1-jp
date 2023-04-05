@@ -542,6 +542,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   "textoDa\xF1o": {fileID: 3080837907565134503}
+  dropValue: 4
 --- !u!82 &8741028567591648158
 AudioSource:
   m_ObjectHideFlags: 0
