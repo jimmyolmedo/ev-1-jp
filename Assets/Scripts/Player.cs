@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
 
     float inputX;
 
+    public int vida;
+
 
 
 
@@ -27,6 +29,19 @@ public class Player : MonoBehaviour
 
         AnimatorParameters();
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("ataqueEnemigo"))
+        {
+            Debug.Log("golpeado!!");
+            vida--;
+        }
+    }
+
+
+
 
     void Golpear()
     {
@@ -74,8 +89,6 @@ public class Player : MonoBehaviour
 
         movimiento = true;          // desbloquea el movimiento del personaje
     }
-
-
 
 
 

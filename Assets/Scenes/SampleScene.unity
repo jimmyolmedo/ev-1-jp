@@ -1909,6 +1909,7 @@ GameObject:
   - component: {fileID: 869237352}
   - component: {fileID: 869237351}
   - component: {fileID: 869237353}
+  - component: {fileID: 869237354}
   m_Layer: 0
   m_Name: "ara\xF1aParent"
   m_TagString: Untagged
@@ -2000,6 +2001,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!58 &869237354
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869237349}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.4395342, y: 1.0255247}
+  serializedVersion: 2
+  m_Radius: 1.3176026
 --- !u!1 &875154749
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,6 +3444,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AudioSource: {fileID: 1285023818}
+--- !u!1 &1313682968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9075547028056742822, guid: 136f06ecd44f520479180b11a53cc04d, type: 3}
+  m_PrefabInstance: {fileID: 1857512203}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &1313682972
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313682968}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -1.2631742, y: 1.1212919}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.82}
+    newSize: {x: 0.46, y: 0.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.059347, y: 3.5210648}
+  m_EdgeRadius: 0
 --- !u!4 &1338360982 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8282887390871893395, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
@@ -4660,6 +4708,10 @@ PrefabInstance:
     - target: {fileID: -7552582706839291426, guid: 136f06ecd44f520479180b11a53cc04d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9075547028056742822, guid: 136f06ecd44f520479180b11a53cc04d, type: 3}
+      propertyPath: m_TagString
+      value: ataqueEnemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 136f06ecd44f520479180b11a53cc04d, type: 3}
@@ -5967,6 +6019,7 @@ MonoBehaviour:
   movimiento: 1
   golpear: 1
   velocidadMovimiento: 13
+  vida: 3
 --- !u!50 &1670789330534203972
 Rigidbody2D:
   serializedVersion: 4

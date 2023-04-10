@@ -39,6 +39,10 @@ public class arañaNormal : MonoBehaviour
         {
             golpe();
         }
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            animator.Play("atacar");
+        }
     }
 
     public void muerte()

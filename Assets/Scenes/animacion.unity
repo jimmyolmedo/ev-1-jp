@@ -278,6 +278,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -1.95
       objectReference: {fileID: 0}
+    - target: {fileID: 9075547028056742822, guid: 136f06ecd44f520479180b11a53cc04d, type: 3}
+      propertyPath: m_TagString
+      value: ataqueEnemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 136f06ecd44f520479180b11a53cc04d, type: 3}
 --- !u!1 &244180591 stripped
@@ -305,6 +309,37 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!1 &244180593 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9075547028056742822, guid: 136f06ecd44f520479180b11a53cc04d, type: 3}
+  m_PrefabInstance: {fileID: 244180590}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &244180594
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244180593}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -2.1785681, y: 1.555889}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.82}
+    newSize: {x: 0.46, y: 0.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.1179323, y: 2.434326}
+  m_EdgeRadius: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
