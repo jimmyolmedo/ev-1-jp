@@ -6,6 +6,7 @@ TagManager:
   tags:
   - hacha
   - ataqueEnemigo
+  - suelo
   layers:
   - Default
   - TransparentFX

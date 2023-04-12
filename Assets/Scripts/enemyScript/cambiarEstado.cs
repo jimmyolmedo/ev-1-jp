@@ -28,4 +28,9 @@ public class cambiarEstado : MonoBehaviour
         posReal.position = new Vector2(root.position.x, posReal.position.y);
     }
 
+    public void atacado()
+    {
+        gameObject.GetComponentInParent<arañaNormal>().daño();
+    }
+
 }

@@ -16,6 +16,7 @@ public class arañaNormal : MonoBehaviour
     public Rigidbody2D rb;
 
     public bool caminando = true;
+    public bool callendo = true;
 
     // Start is called before the first frame update
     void Start()
@@ -24,24 +25,43 @@ public class arañaNormal : MonoBehaviour
         playerPos = player.transform;                      //toma la posicion del player                   
         animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+        caer();
     }
 
     // Update is called once per frame
     void Update()
     {
-        muerte();
-        movement();
+        if (callendo == false)
+        {
+            muerte();
+            movement();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("hacha"))
+        if(callendo == true)
         {
-            golpe();
+            if (collision.gameObject.CompareTag("suelo"))
+            {
+                callendo = false;
+                rb.gravityScale = 0;
+                animator.Play("caminar");
+            }
         }
-        if (collision.gameObject.CompareTag("Player"))
+
+
+        if(callendo == false)
         {
-            animator.Play("atacar");
+            if (collision.gameObject.CompareTag("hacha"))
+            {
+                golpe();
+            }
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                animator.Play("atacar");
+            }
         }
     }
 
@@ -65,7 +85,16 @@ public class arañaNormal : MonoBehaviour
     {
         caminando = false;
         animator.Play("hurt");
+    }
+
+    public void daño()
+    {
         vida--;
+    }
+
+    public void caer()
+    {
+        animator.Play("caer");
     }
 
 }
