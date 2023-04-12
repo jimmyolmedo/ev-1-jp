@@ -9,6 +9,8 @@ public class arañaNormal : MonoBehaviour
     public float speed;
     public float empuje;
 
+    public Vector3 escala;
+
     public GameObject player;
     public Transform playerPos;
     public Transform root;
@@ -18,6 +20,7 @@ public class arañaNormal : MonoBehaviour
 
     public bool caminando = true;
     public bool callendo = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -35,11 +38,13 @@ public class arañaNormal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        Girar();
+
         if (callendo == false)
         {
             muerte();
             movement();
-            //Direccion();
         }
     }
 
@@ -80,7 +85,6 @@ public class arañaNormal : MonoBehaviour
 
     public void movement()
     {
-        Direccion();
 
        if (caminando == true)
         {
@@ -128,10 +132,21 @@ public class arañaNormal : MonoBehaviour
     }
 
 
-    void Direccion()
+    void Girar()
     {
-       
+        escala = transform.localScale;
+        float direccion;
+        direccion = transform.position.x - player.transform.position.x;
+        if(direccion >= 0)
+        {
+            escala.x = 1;
+            transform.localScale = escala;
+        }
+        else
+        {
+            escala.x = -1;
+            transform.localScale = escala;
+        }
     }
-
 
 }

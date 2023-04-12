@@ -16,6 +16,10 @@ public class Player : MonoBehaviour
 
     public int vida;
 
+    public bool mirarDerecha;
+
+    public Vector3 Escala;
+
 
 
 
@@ -89,7 +93,6 @@ public class Player : MonoBehaviour
 
         movimiento = true;          // desbloquea el movimiento del personaje
     }
-
 
 
 
