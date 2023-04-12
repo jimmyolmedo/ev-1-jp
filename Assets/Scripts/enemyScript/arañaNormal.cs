@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class arañaNormal : MonoBehaviour
 {
-
+    
     public int vida;
     public float speed;
     public float empuje;
@@ -14,6 +14,7 @@ public class arañaNormal : MonoBehaviour
     public Transform root;
     public Animator animator;
     public Rigidbody2D rb;
+    public BoxCollider2D bc;
 
     public bool caminando = true;
     public bool callendo = true;
@@ -27,6 +28,8 @@ public class arañaNormal : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         caer();
+
+       
     }
 
     // Update is called once per frame
@@ -36,6 +39,7 @@ public class arañaNormal : MonoBehaviour
         {
             muerte();
             movement();
+            //Direccion();
         }
     }
 
@@ -56,7 +60,8 @@ public class arañaNormal : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("hacha"))
             {
-                golpe();
+                Golpe();
+                Empujar(collision.transform.position.x);                          //activa la funcion Empujar y toma la posicion de x del hacha
             }
             if (collision.gameObject.CompareTag("Player"))
             {
@@ -75,16 +80,19 @@ public class arañaNormal : MonoBehaviour
 
     public void movement()
     {
-       if(caminando == true)
+        Direccion();
+
+       if (caminando == true)
         {
             transform.position = Vector2.MoveTowards(transform.position, new Vector2(playerPos.position.x, transform.position.y), speed * Time.deltaTime);
         }
     }
 
-    public void golpe()
+    public void Golpe()
     {
         caminando = false;
         animator.Play("hurt");
+        // empujar a la araña
     }
 
     public void daño()
@@ -96,5 +104,34 @@ public class arañaNormal : MonoBehaviour
     {
         animator.Play("caer");
     }
+
+    void Empujar(float hachaPosX)
+    {
+        if(transform.position.x > hachaPosX)
+        {
+            print("empujar hacia la derecha");
+            rb.AddForce(Vector2.right * empuje , ForceMode2D.Impulse);
+        }
+        else
+        {
+            rb.AddForce(Vector2.left * empuje, ForceMode2D.Impulse);
+        }
+
+
+        Invoke("DetenerEmpuje", 0.25f);
+
+    }
+
+    void DetenerEmpuje()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
+
+    void Direccion()
+    {
+       
+    }
+
 
 }
