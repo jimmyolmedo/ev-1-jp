@@ -15,7 +15,7 @@ public class Arbol : MonoBehaviour
     public void RecibirDaño(int _daño)
     {
 
-        MostrarTextoDaño(_daño);
+       /* MostrarTextoDaño(_daño);
 
         hp -= _daño;            //restar daño
         if (hp < 1)             // si no tengo hp ejecutar Muere sino ejecutar Hit
@@ -25,7 +25,7 @@ public class Arbol : MonoBehaviour
         else
         {
             Hit();
-        }
+        } */
     }
 
     void Hit()
