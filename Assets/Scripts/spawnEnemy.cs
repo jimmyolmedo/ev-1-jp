@@ -8,10 +8,13 @@ public class spawnEnemy : MonoBehaviour
     public int oleada;
 
     public GameObject[] enemys;
+    public GameObject enemy1;
+    public GameObject enemy2;
+    public GameObject enemy3;
 
     public Transform[] spawn;
 
-    public float timerSpawn;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +29,8 @@ public class spawnEnemy : MonoBehaviour
 
     public void spawnear()
     {
-
+        int randomT = Random.Range(0, spawn.Length);
+        int randomG = Random.Range(0, enemys.Length);
+        Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 90, 0));
     }
 }
