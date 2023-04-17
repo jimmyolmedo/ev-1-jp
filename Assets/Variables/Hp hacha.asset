@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 770043aa3ce52d24bb28c182b88b9427, type: 3}
   m_Name: Hp hacha
   m_EditorClassIdentifier: 
-  valor: 0
+  valor: 100
