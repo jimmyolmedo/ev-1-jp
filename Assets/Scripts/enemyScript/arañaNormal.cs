@@ -80,6 +80,7 @@ public class arañaNormal : MonoBehaviour
         if(vida <= 0)
         {
             Destroy(gameObject);
+            GameObject.Find("SPAWNERS").gameObject.GetComponent<spawnEnemy>().BajarSpawn();
         }
     }
 
