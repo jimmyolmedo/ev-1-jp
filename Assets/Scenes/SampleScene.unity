@@ -5215,7 +5215,7 @@ MonoBehaviour:
   oleada: 0
   spawnMax: 0
   enemys:
-  - {fileID: -8653719598885068355, guid: 136f06ecd44f520479180b11a53cc04d, type: 3}
+  - {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
   enemy1: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
   enemy2: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
   enemy3: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
