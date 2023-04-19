@@ -19,6 +19,8 @@ public class spawnEnemy : MonoBehaviour
     public float tiempoSpawn;
     public float timerSpawn;
 
+    public bool puedeSpawnear = true;
+
 
     // Start is called before the first frame update
     void Start()
@@ -31,21 +33,26 @@ public class spawnEnemy : MonoBehaviour
     {
         timerSpawn -= Time.deltaTime;
 
-        if (spawnMax < 3)
+        DetenerSpawn();
+
+        if(puedeSpawnear == true)
         {
-            if(timerSpawn <= 0)
+            if (spawnMax < 3)
             {
-                Spawnear();
+                if (timerSpawn <= 0)
+                {
+                    Spawnear();
+                }
+
             }
         }
+
     }
 
     public void Spawnear()
     {
         int randomT = Random.Range(0, spawn.Length);
         int randomG = Random.Range(0, enemys.Length);
-        int numero = 0;
-
 
          
             if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false)
@@ -54,7 +61,9 @@ public class spawnEnemy : MonoBehaviour
                 spawn[randomT].gameObject.GetComponent<Arbol>().ocupado = true;
                 spawnMax++;
                 timerSpawn = tiempoSpawn;
-                numero++;
+                arbolCaidos++;
+
+                
             }
             else
             {
@@ -66,6 +75,14 @@ public class spawnEnemy : MonoBehaviour
     public void BajarSpawn()
     {
         spawnMax--;
+    }
+
+    public void DetenerSpawn()
+    {
+        if(arbolCaidos >= 10)
+        {
+            puedeSpawnear = false;
+        }
     }
 
 }

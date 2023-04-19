@@ -37,10 +37,11 @@ public class Arbol : MonoBehaviour
             animator.Play("agitarHojas");
             PasiveDamage();
         }
-        else
+       /* else
         {
             animator.Play("New State");
         }
+        */
     }
 
 
@@ -97,6 +98,7 @@ public class Arbol : MonoBehaviour
             {
                 CrearEnemy();
                 GameObject.Find("SPAWNERS").gameObject.GetComponent<spawnEnemy>().BajarSpawn();
+                animator.Play("Shake");
             }
             
             

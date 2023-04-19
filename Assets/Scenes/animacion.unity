@@ -312,6 +312,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: aranaRapida
       objectReference: {fileID: 0}
+    - target: {fileID: -8002856854453265432, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ1_1
+      objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -380,6 +384,22 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7162696689594910546, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6953309628919093320, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ2_1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6873458488190408945, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: cuerpo2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6054051227479233525, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: cabeza
+      objectReference: {fileID: 0}
     - target: {fileID: -5938150460293460691, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -403,6 +423,14 @@ PrefabInstance:
     - target: {fileID: -5574467467669957496, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -5267961316067255303, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: colmillo
+      objectReference: {fileID: 0}
+    - target: {fileID: -4688627467887156517, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: piernaDE2
       objectReference: {fileID: 0}
     - target: {fileID: -2064485779690658254, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_Color.b
@@ -432,6 +460,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -721753946514977911, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: PiernaDE3
+      objectReference: {fileID: 0}
     - target: {fileID: -344525971476705704, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -468,6 +500,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1921145645652776261, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958760560476766075, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: piernaDE
+      objectReference: {fileID: 0}
     - target: {fileID: 2143557365056243571, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -480,6 +520,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2308335230997180423, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ2
+      objectReference: {fileID: 0}
     - target: {fileID: 3506353442395270153, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -491,6 +535,22 @@ PrefabInstance:
     - target: {fileID: 3506353442395270153, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3551940272406826641, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: PiernaIZ3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686781366121752554, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: PiernaDE4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273189827969731738, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: cuerpo3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943260302857054993, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: ojos
       objectReference: {fileID: 0}
     - target: {fileID: 7933922618755848445, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_Color.b
