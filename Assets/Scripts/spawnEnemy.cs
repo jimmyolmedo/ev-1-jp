@@ -30,7 +30,7 @@ public class spawnEnemy : MonoBehaviour
     {
         timerSpawn -= Time.deltaTime;
 
-        if (spawnMax <= 3)
+        if (spawnMax < 3)
         {
             if(timerSpawn <= 0)
             {
@@ -45,8 +45,8 @@ public class spawnEnemy : MonoBehaviour
         int randomG = Random.Range(0, enemys.Length);
         int numero = 0;
 
-         if (numero == 0)
-         {
+
+         
             if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false)
             {
                //Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
@@ -59,7 +59,7 @@ public class spawnEnemy : MonoBehaviour
             {
                 randomT = Random.Range(0, spawn.Length);
             }
-         }
+         
     }
 
     public void BajarSpawn()

@@ -50,17 +50,6 @@ public class arañaNormal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(callendo == true)
-        {
-            if (collision.gameObject.CompareTag("suelo"))
-            {
-                callendo = false;
-                rb.gravityScale = 0;
-                animator.Play("caminar");
-            }
-        }
-
-
         if(callendo == false)
         {
             if (collision.gameObject.CompareTag("hacha"))
@@ -75,12 +64,26 @@ public class arañaNormal : MonoBehaviour
         }
     }
 
+
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (callendo == true)
+        {
+            if (collision.gameObject.CompareTag("suelo"))
+            {
+                callendo = false;
+                rb.gravityScale = 0;
+                animator.Play("caminar");
+            }
+        }
+    }
+
     public void muerte()
     {
         if(vida <= 0)
         {
             Destroy(gameObject);
-            GameObject.Find("SPAWNERS").gameObject.GetComponent<spawnEnemy>().BajarSpawn();
         }
     }
 

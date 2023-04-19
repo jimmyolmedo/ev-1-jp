@@ -5226,7 +5226,7 @@ MonoBehaviour:
   - {fileID: 2021770910}
   - {fileID: 380061597}
   - {fileID: 1338360982}
-  tiempoSpawn: 5
+  tiempoSpawn: 3
   timerSpawn: 0
 --- !u!4 &1955895387
 Transform:

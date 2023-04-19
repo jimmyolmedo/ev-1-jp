@@ -96,6 +96,7 @@ public class Arbol : MonoBehaviour
            if(ocupado == true)
             {
                 CrearEnemy();
+                GameObject.Find("SPAWNERS").gameObject.GetComponent<spawnEnemy>().BajarSpawn();
             }
             
             
@@ -114,7 +115,6 @@ public class Arbol : MonoBehaviour
 
     public void PasiveDamage()
     {
-        timerDamage = timeDamage;
         timerDamage -= Time.deltaTime;
         if (timerDamage <= 0)
         {
