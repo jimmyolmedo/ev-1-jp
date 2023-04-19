@@ -9,8 +9,43 @@ public class Arbol : MonoBehaviour
 {
     public int hp;
     public UnityEvent onHit, onDead, onCaida;
+    public Animator animator;
     public TextMeshPro textoDaño;
     public int dropValue;
+
+    public bool ocupado;
+    public Transform lugarSpawn;
+    public GameObject enemyActual;
+    public int damage;
+    public float timerDamage;
+    public float timeDamage;
+
+
+
+    public void Start()
+    {
+        animator = GetComponent<Animator>();
+        timerDamage = timeDamage;
+    }
+
+
+
+    private void Update()
+    {
+        if (ocupado)
+        {
+            animator.Play("agitarHojas");
+            PasiveDamage();
+        }
+        else
+        {
+            animator.Play("New State");
+        }
+    }
+
+
+
+
 
     public void RecibirDaño(int _daño)
     {
@@ -58,9 +93,35 @@ public class Arbol : MonoBehaviour
         if(collision.CompareTag("hacha"))
         {
 
-            int daño = collision.GetComponent<Hacha>().dañoHacha.valor;     //obtiene el daño del hacha
-            collision.GetComponent<Hacha>().Golpeo();                       // ejecuta la funcion Golpeo dentro del hacha
-            RecibirDaño(daño);                                              // Aplica daño al arbol
+           if(ocupado == true)
+            {
+                CrearEnemy();
+            }
+            
+            
+            //int daño = collision.GetComponent<Hacha>().dañoHacha.valor;     //obtiene el daño del hacha
+            //collision.GetComponent<Hacha>().Golpeo();                       // ejecuta la funcion Golpeo dentro del hacha
+            // RecibirDaño(daño);                                              // Aplica daño al arbol
         }
     }
+
+
+    public void CrearEnemy()
+    {
+        Instantiate(enemyActual, lugarSpawn.position, Quaternion.Euler(0, 0, 0));
+        ocupado = false;
+    }
+
+    public void PasiveDamage()
+    {
+        timerDamage = timeDamage;
+        timerDamage -= Time.deltaTime;
+        if (timerDamage <= 0)
+        {
+            hp = hp - damage;
+            MostrarTextoDaño(damage);
+            timerDamage = timeDamage;
+        }
+    }
+
 }

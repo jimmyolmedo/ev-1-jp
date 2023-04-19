@@ -541,8 +541,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  animator: {fileID: 0}
   "textoDa\xF1o": {fileID: 3080837907565134503}
   dropValue: 4
+  ocupado: 0
+  lugarSpawn: {fileID: 1589858058}
+  enemyActual: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+  damage: 5
+  timerDamage: 0
+  timeDamage: 10
 --- !u!82 &8741028567591648158
 AudioSource:
   m_ObjectHideFlags: 0

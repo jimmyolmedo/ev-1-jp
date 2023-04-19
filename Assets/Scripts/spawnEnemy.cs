@@ -47,10 +47,10 @@ public class spawnEnemy : MonoBehaviour
 
          if (numero == 0)
          {
-            if (spawn[randomT].gameObject.GetComponent<lugarSpawn>().ocupado == false)
+            if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false)
             {
-                Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
-                spawn[randomT].gameObject.GetComponent<lugarSpawn>().ocupado = true;
+               //Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
+                spawn[randomT].gameObject.GetComponent<Arbol>().ocupado = true;
                 spawnMax++;
                 timerSpawn = tiempoSpawn;
                 numero++;
