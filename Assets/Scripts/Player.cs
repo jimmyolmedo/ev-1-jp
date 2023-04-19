@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     public bool golpear;                // activar o desactivar el golpe del hacha
 
     public float velocidadMovimiento;
+    public float empuje;
 
     float inputX;
 
@@ -20,7 +21,15 @@ public class Player : MonoBehaviour
 
     public Vector3 Escala;
 
+    public Rigidbody2D rb;
 
+
+
+
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
 
     private void Update()
@@ -41,6 +50,7 @@ public class Player : MonoBehaviour
         {
             Debug.Log("golpeado!!");
             vida--;
+            Empujar(collision.transform.position.x);
         }
     }
 
@@ -94,6 +104,29 @@ public class Player : MonoBehaviour
         movimiento = true;          // desbloquea el movimiento del personaje
     }
 
+
+
+    void Empujar(float hachaPosX)
+    {
+        if (transform.position.x > hachaPosX)
+        {
+            print("empujar hacia la derecha");
+            rb.AddForce(Vector2.right * empuje, ForceMode2D.Impulse);
+        }
+        else
+        {
+            rb.AddForce(Vector2.left * empuje, ForceMode2D.Impulse);
+        }
+
+        animator.Play("leñadorHurt");
+        Invoke("DetenerEmpuje", 0.30f);
+
+    }
+
+    void DetenerEmpuje()
+    {
+        rb.velocity = Vector2.zero;
+    }
 
 
 }

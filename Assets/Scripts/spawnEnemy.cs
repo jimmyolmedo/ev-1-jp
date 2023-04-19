@@ -7,6 +7,7 @@ public class spawnEnemy : MonoBehaviour
 
     public int oleada;
     public int spawnMax;
+    public int arbolCaidos;
 
     public GameObject[] enemys;
     public GameObject enemy1;

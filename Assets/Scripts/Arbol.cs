@@ -84,7 +84,7 @@ public class Arbol : MonoBehaviour
     void MostrarTextoDaño(int cantidad)
     {
         textoDaño.gameObject.SetActive(false);      // apagar texto para que se resetee la animación
-        textoDaño.text = cantidad.ToString();       // actualizar la cantidad de daño en el texto
+        textoDaño.text = "- " + cantidad.ToString();       // actualizar la cantidad de daño en el texto
         textoDaño.gameObject.SetActive(true);       // prender el texto para que muestre cuanto se le quito
     }
 
