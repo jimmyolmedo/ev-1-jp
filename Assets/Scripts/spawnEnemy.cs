@@ -51,14 +51,20 @@ public class spawnEnemy : MonoBehaviour
 
     public void Spawnear()
     {
+
+        enemys = new GameObject[] { enemy1 };
+
         int randomT = Random.Range(0, spawn.Length);
         int randomG = Random.Range(0, enemys.Length);
 
          
             if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false)
             {
-               //Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
-                spawn[randomT].gameObject.GetComponent<Arbol>().ocupado = true;
+            //Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
+
+            spawn[randomT].gameObject.GetComponent<Arbol>().enemyActual = enemys[randomG];
+
+            spawn[randomT].gameObject.GetComponent<Arbol>().ocupado = true;
                 spawnMax++;
                 timerSpawn = tiempoSpawn;
                 arbolCaidos++;
@@ -71,6 +77,66 @@ public class spawnEnemy : MonoBehaviour
             }
          
     }
+
+    public void SpawnearLv2()
+    {
+
+        enemys = new GameObject[] { enemy1, enemy2 };
+
+        int randomT = Random.Range(0, spawn.Length);
+        int randomG = Random.Range(0, enemys.Length);
+
+
+        if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false)
+        {
+            //Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
+
+            spawn[randomT].gameObject.GetComponent<Arbol>().enemyActual = enemys[randomG];
+
+            spawn[randomT].gameObject.GetComponent<Arbol>().ocupado = true;
+            spawnMax++;
+            timerSpawn = tiempoSpawn;
+            arbolCaidos++;
+
+
+        }
+        else
+        {
+            randomT = Random.Range(0, spawn.Length);
+        }
+    }
+
+
+
+    public void SpawnearLv3()
+    {
+
+        enemys = new GameObject[] { enemy1, enemy2, enemy3 };
+
+        int randomT = Random.Range(0, spawn.Length);
+        int randomG = Random.Range(0, enemys.Length);
+
+
+        if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false)
+        {
+            //Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
+
+            spawn[randomT].gameObject.GetComponent<Arbol>().enemyActual = enemys[randomG];
+
+            spawn[randomT].gameObject.GetComponent<Arbol>().ocupado = true;
+            spawnMax++;
+            timerSpawn = tiempoSpawn;
+            arbolCaidos++;
+
+
+        }
+        else
+        {
+            randomT = Random.Range(0, spawn.Length);
+        }
+    }
+
+
 
     public void BajarSpawn()
     {

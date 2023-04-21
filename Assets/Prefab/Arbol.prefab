@@ -549,7 +549,7 @@ MonoBehaviour:
   enemyActual: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
   damage: 5
   timerDamage: 0
-  timeDamage: 10
+  timeDamage: 30
 --- !u!82 &8741028567591648158
 AudioSource:
   m_ObjectHideFlags: 0
