@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class arañaNormal : MonoBehaviour
 {
-    
+
+    public int nivel;
     public int vida;
+
+
     public float speed;
     public float empuje;
+    public float damage;
 
     public Vector3 escala;
 
@@ -25,12 +29,16 @@ public class arañaNormal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
+        AumentoNivel();
+
+
         player = GameObject.Find("leñador");               //busca al leñador para llenar la variable player
         playerPos = player.transform;                      //toma la posicion del player                   
         animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
-        caer();
+        Caer();
 
        
     }
@@ -43,8 +51,8 @@ public class arañaNormal : MonoBehaviour
 
         if (callendo == false)
         {
-            muerte();
-            movement();
+            Muerte();
+            Movement();
         }
     }
 
@@ -79,15 +87,16 @@ public class arañaNormal : MonoBehaviour
         }
     }
 
-    public void muerte()
+    public void Muerte()
     {
         if(vida <= 0)
         {
+            GameManager.gm.contEnemy++;
             Destroy(gameObject);
         }
     }
 
-    public void movement()
+    public void Movement()
     {
 
        if (caminando == true)
@@ -103,12 +112,12 @@ public class arañaNormal : MonoBehaviour
         // empujar a la araña
     }
 
-    public void daño()
+    public void Daño()
     {
         vida--;
     }
 
-    public void caer()
+    public void Caer()
     {
         animator.Play("caer");
     }
@@ -151,6 +160,17 @@ public class arañaNormal : MonoBehaviour
             escala.x = -1;
             transform.localScale = escala;
         }
+    }
+
+
+    public void AumentoNivel()
+    {
+        nivel = GameManager.gm.numOleada;
+
+        speed = speed + nivel;
+
+        damage = damage + nivel;
+
     }
 
 }

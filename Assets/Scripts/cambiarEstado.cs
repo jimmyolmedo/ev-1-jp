@@ -30,7 +30,7 @@ public class cambiarEstado : MonoBehaviour
 
     public void atacado()
     {
-        gameObject.GetComponentInParent<arañaNormal>().daño();
+        gameObject.GetComponentInParent<arañaNormal>().Daño();
     }
 
 }

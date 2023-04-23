@@ -10,10 +10,24 @@ public class GameManager : MonoBehaviour
 
     public IntVariable madera;
 
+    public int numOleada = 1;
+
+    public int contEnemy;
+
     private void Awake()
     {
         gm = this;
     }
+
+    private void Update()
+    {
+        if(contEnemy >= 15)
+        {
+            numOleada++;
+        }
+    }
+
+
 
     public void OnGameStart()
     {
@@ -31,7 +45,7 @@ public class GameManager : MonoBehaviour
         onGameRestart.Invoke();
     }
 
-    public void agregarMadera(int _cantidad)
+    public void AgregarMadera(int _cantidad)
     {
         madera.valor += _cantidad;
     }

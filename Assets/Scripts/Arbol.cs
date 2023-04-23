@@ -76,7 +76,7 @@ public class Arbol : MonoBehaviour
 
     void Caida()
     {
-        GameManager.gm.agregarMadera(dropValue);
+        GameManager.gm.AgregarMadera(dropValue);
 
 
         onCaida.Invoke();                           // este evento se manda a llamar desde la animación de caida
