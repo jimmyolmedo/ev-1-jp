@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     public int contEnemy;
 
+    public GameObject spawner;
+
     private void Awake()
     {
         gm = this;
@@ -21,9 +23,21 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if(contEnemy >= 15)
+        if(contEnemy >= 10)
         {
             numOleada++;
+
+            spawner.gameObject.GetComponent<spawnEnemy>().aumentarSpawn();
+            contEnemy = 0;
+        }
+
+        if(numOleada % 2 == 0)
+        {
+            spawner.SetActive(false);
+        }
+        else
+        {
+            spawner.SetActive(true);
         }
     }
 
@@ -49,5 +63,4 @@ public class GameManager : MonoBehaviour
     {
         madera.valor += _cantidad;
     }
-
 }

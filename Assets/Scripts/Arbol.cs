@@ -13,6 +13,9 @@ public class Arbol : MonoBehaviour
     public TextMeshPro textoDaño;
     public int dropValue;
 
+    public AudioClip sonidoCaida;
+    public AudioSource audioSource;
+
     public bool ocupado;
     public Transform lugarSpawn;
     public GameObject enemyActual;
@@ -24,6 +27,7 @@ public class Arbol : MonoBehaviour
 
     public void Start()
     {
+        audioSource = GetComponent<AudioSource>(); 
         animator = GetComponent<Animator>();
         timerDamage = timeDamage;
     }
@@ -126,4 +130,10 @@ public class Arbol : MonoBehaviour
         }
     }
 
+
+
+    void SonidoCaida()
+    {
+        audioSource.PlayOneShot(sonidoCaida);
+    }
 }

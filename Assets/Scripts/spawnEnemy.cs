@@ -8,6 +8,7 @@ public class spawnEnemy : MonoBehaviour
     public int oleada;
     public int spawnMax;
     public int arbolCaidos;
+    public int spawnPorOleada = 15;
 
     public GameObject[] enemys;
     public GameObject enemy1;
@@ -41,7 +42,7 @@ public class spawnEnemy : MonoBehaviour
             {
                 if (timerSpawn <= 0)
                 {
-                    Spawnear();
+                    NivelOleada();
                 }
 
             }
@@ -148,6 +149,38 @@ public class spawnEnemy : MonoBehaviour
         if(arbolCaidos >= 10)
         {
             puedeSpawnear = false;
+        }
+    }
+
+
+    public void aumentarSpawn()
+    {
+        oleada = GameManager.gm.numOleada;
+
+        if(oleada != 1)
+        {
+            tiempoSpawn = tiempoSpawn - oleada;
+            timerSpawn = tiempoSpawn;
+        }
+    }
+
+
+    public void NivelOleada()
+    {
+        if(spawnPorOleada > 0)
+        {
+            if (oleada <= 3)
+            {
+                Spawnear();
+            }
+            else if (oleada <= 6)
+            {
+                SpawnearLv2();
+            }
+            else
+            {
+                SpawnearLv3();
+            }
         }
     }
 

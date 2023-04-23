@@ -5855,6 +5855,7 @@ MonoBehaviour:
   madera: {fileID: 11400000, guid: 01973a019ccef4b4cb6d25e17fecc531, type: 2}
   numOleada: 1
   contEnemy: 0
+  spawner: {fileID: 1955895385}
 --- !u!4 &1732954613
 Transform:
   m_ObjectHideFlags: 0
@@ -6403,9 +6404,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cb7f555aaccd74ea17140677de68c6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  oleada: 0
+  oleada: 1
   spawnMax: 0
   arbolCaidos: 0
+  spawnPorOleada: 15
   enemys: []
   enemy1: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
   enemy2: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
@@ -6417,7 +6419,7 @@ MonoBehaviour:
   - {fileID: 2021770910}
   - {fileID: 380061597}
   - {fileID: 1338360982}
-  tiempoSpawn: 15
+  tiempoSpawn: 3
   timerSpawn: 0
   puedeSpawnear: 1
 --- !u!4 &1955895387
