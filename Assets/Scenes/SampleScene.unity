@@ -5853,6 +5853,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   madera: {fileID: 11400000, guid: 01973a019ccef4b4cb6d25e17fecc531, type: 2}
+  numOleada: 1
+  contEnemy: 0
 --- !u!4 &1732954613
 Transform:
   m_ObjectHideFlags: 0
@@ -6415,7 +6417,7 @@ MonoBehaviour:
   - {fileID: 2021770910}
   - {fileID: 380061597}
   - {fileID: 1338360982}
-  tiempoSpawn: 3
+  tiempoSpawn: 15
   timerSpawn: 0
   puedeSpawnear: 1
 --- !u!4 &1955895387
