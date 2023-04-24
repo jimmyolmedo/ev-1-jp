@@ -6,6 +6,8 @@ public class cambiarEstado : MonoBehaviour
 {
     public Transform root;
     public Transform posReal;
+
+    public GameObject parent;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,13 @@ public class cambiarEstado : MonoBehaviour
     public void atacado()
     {
         gameObject.GetComponentInParent<arañaNormal>().Daño();
+    }
+
+
+   public void Destruir()
+    {
+        Debug.Log("destruiste un enemigo!!");
+        Destroy(parent.gameObject);
     }
 
 }

@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
     public UnityEvent onGameStart, onGameOver, onGameRestart;
     public static GameManager gm;
 
+    public GameObject[] arboles;
+
     public IntVariable madera;
 
     public int numOleada = 1;
@@ -15,6 +17,7 @@ public class GameManager : MonoBehaviour
     public int contEnemy;
 
     public GameObject spawner;
+    public GameObject looby;
 
     private void Awake()
     {
@@ -27,17 +30,25 @@ public class GameManager : MonoBehaviour
         {
             numOleada++;
 
-            spawner.gameObject.GetComponent<spawnEnemy>().aumentarSpawn();
+            if(numOleada % 2 != 0)
+            {
+                spawner.gameObject.GetComponent<spawnEnemy>().aumentarSpawn();
+            }
+
+            AumentarDamageArbol();
+
             contEnemy = 0;
         }
 
         if(numOleada % 2 == 0)
         {
             spawner.SetActive(false);
+            looby.SetActive(true);
         }
         else
         {
             spawner.SetActive(true);
+            looby.SetActive(false);
         }
     }
 
@@ -63,4 +74,13 @@ public class GameManager : MonoBehaviour
     {
         madera.valor += _cantidad;
     }
+
+    public void AumentarDamageArbol()
+    {
+        for(int i = 0; i < arboles.Length; i++)
+        {
+            arboles[i].gameObject.GetComponent<Arbol>().AumentarDamage();
+        }
+    }
+
 }

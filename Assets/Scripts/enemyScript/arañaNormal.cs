@@ -6,12 +6,13 @@ public class arañaNormal : MonoBehaviour
 {
 
     public int nivel;
-    public int vida;
+    public float vida;
 
 
     public float speed;
     public float empuje;
     public float damage;
+    public float damagePlayer;
 
     public Vector3 escala;
 
@@ -21,9 +22,12 @@ public class arañaNormal : MonoBehaviour
     public Animator animator;
     public Rigidbody2D rb;
     public BoxCollider2D bc;
+    public CircleCollider2D circleCollider2D;
 
     public bool caminando = true;
     public bool callendo = true;
+    public bool puedoAtacar = true;
+    public bool muerto;
 
 
     // Start is called before the first frame update
@@ -60,14 +64,21 @@ public class arañaNormal : MonoBehaviour
     {
         if(callendo == false)
         {
-            if (collision.gameObject.CompareTag("hacha"))
+            if(muerto == false)
             {
-                Golpe();
-                Empujar(collision.transform.position.x);                          //activa la funcion Empujar y toma la posicion de x del hacha
-            }
-            if (collision.gameObject.CompareTag("Player"))
-            {
-                animator.Play("atacar");
+                if (collision.gameObject.CompareTag("hacha"))
+                {
+                    damagePlayer = collision.gameObject.GetComponent<Hacha>().dañoHacha;
+                    Golpe();
+                    Empujar(collision.transform.position.x);                          //activa la funcion Empujar y toma la posicion de x del hacha
+                }
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    if (puedoAtacar == true)
+                    {
+                        animator.Play("atacar");
+                    }
+                }
             }
         }
     }
@@ -91,8 +102,14 @@ public class arañaNormal : MonoBehaviour
     {
         if(vida <= 0)
         {
-            GameManager.gm.contEnemy++;
-            Destroy(gameObject);
+            if(muerto == false)
+            {
+                caminando = false;
+                puedoAtacar = false;
+                animator.Play("muerte");
+                GameManager.gm.contEnemy++;
+                muerto = true;
+            }
         }
     }
 
@@ -114,7 +131,7 @@ public class arañaNormal : MonoBehaviour
 
     public void Daño()
     {
-        vida--;
+        vida = vida - damagePlayer;
     }
 
     public void Caer()
@@ -172,5 +189,7 @@ public class arañaNormal : MonoBehaviour
         damage = damage + nivel;
 
     }
+
+
 
 }

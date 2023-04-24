@@ -12,10 +12,12 @@ public class Player : MonoBehaviour
 
     public float velocidadMovimiento;
     public float empuje;
+    public float damageEnemy;
 
     float inputX;
 
-    public int vida;
+    public float vidaActual;
+    public float vidaMax;
 
     public bool mirarDerecha;
 
@@ -29,11 +31,19 @@ public class Player : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+
+        vidaActual = vidaMax;
     }
 
 
     private void Update()
     {
+
+        if(vidaActual > vidaMax)
+        {
+            vidaActual = vidaMax;
+        }
+
         if(movimiento)
             Mover();
 
@@ -48,8 +58,8 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("ataqueEnemigo"))
         {
+            damageEnemy = collision.gameObject.GetComponentInParent<arañaNormal>().damage;
             Debug.Log("golpeado!!");
-            vida--;
             Empujar(collision.transform.position.x);
         }
     }
@@ -128,5 +138,24 @@ public class Player : MonoBehaviour
         rb.velocity = Vector2.zero;
     }
 
+    public void AumentarVelocidad(float _cantidad)
+    {
+        velocidadMovimiento = velocidadMovimiento + _cantidad;
+    }
+
+
+    public void AumentarHp(float _cantidad)
+    {
+        if(vidaActual < vidaMax)
+        {
+            vidaActual = vidaActual + _cantidad;
+        }
+    }
+
+
+    public void RecibirDamage()
+    {
+        vidaActual = vidaActual - damageEnemy;
+    }
 
 }

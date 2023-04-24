@@ -6,7 +6,7 @@ public class Hacha : MonoBehaviour
 {
 
     public IntVariable hpHacha;
-    public IntVariable dañoHacha;
+    public float dañoHacha = 2;
     public IntVariable gastoPorGolpe;
     public IntVariable lvlHacha;
 
@@ -35,4 +35,10 @@ public class Hacha : MonoBehaviour
             spr.sprite = hachaNormal;
         }
     }
+
+    public void AumentarDamage(float _cantidad)
+    {
+        dañoHacha = dañoHacha + _cantidad;
+    }
+
 }

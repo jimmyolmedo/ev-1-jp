@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using Cinemachine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Arbol : MonoBehaviour
 {
-    public int hp;
+    public int hpActual;
+    public int hpMax;
     public UnityEvent onHit, onDead, onCaida;
     public Animator animator;
     public TextMeshPro textoDaño;
@@ -17,25 +19,50 @@ public class Arbol : MonoBehaviour
     public AudioSource audioSource;
 
     public bool ocupado;
+
     public Transform lugarSpawn;
+
     public GameObject enemyActual;
+
+    public GameObject canvas;
+
     public int damage;
+
+    public float oleadaActual;
+
     public float timerDamage;
+
     public float timeDamage;
 
+    public Slider barraVida;
 
 
     public void Start()
     {
+        hpActual = hpMax;
+
+        barraVida.maxValue = hpMax;
+
         audioSource = GetComponent<AudioSource>(); 
         animator = GetComponent<Animator>();
         timerDamage = timeDamage;
     }
 
+    void Caida()
+    {
+        //GameManager.gm.AgregarMadera(dropValue);
 
+
+        onCaida.Invoke();                           // este evento se manda a llamar desde la animación de caida
+    }
 
     private void Update()
     {
+
+        oleadaActual = GameManager.gm.numOleada;
+
+        barraVida.value = hpActual;
+
         if (ocupado)
         {
             animator.Play("agitarHojas");
@@ -57,8 +84,8 @@ public class Arbol : MonoBehaviour
 
         MostrarTextoDaño(_daño);
 
-        hp -= _daño;            //restar daño
-        if (hp < 1)             // si no tengo hp ejecutar Muere sino ejecutar Hit
+        hpActual -= _daño;            //restar daño
+        if (hpActual < 1)             // si no tengo hp ejecutar Muere sino ejecutar Hit
         {
             Muere();           
         } 
@@ -78,13 +105,7 @@ public class Arbol : MonoBehaviour
         onDead.Invoke();                            // cuando se queda sin hp se ejecuta este evento
     }
 
-    void Caida()
-    {
-        GameManager.gm.AgregarMadera(dropValue);
 
-
-        onCaida.Invoke();                           // este evento se manda a llamar desde la animación de caida
-    }
 
     void MostrarTextoDaño(int cantidad)
     {
@@ -113,6 +134,21 @@ public class Arbol : MonoBehaviour
     }
 
 
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            canvas.SetActive(true);
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        canvas.SetActive(false);
+    }
+
+
     public void CrearEnemy()
     {
         Instantiate(enemyActual, lugarSpawn.position, Quaternion.Euler(0, 0, 0));
@@ -122,9 +158,10 @@ public class Arbol : MonoBehaviour
     public void PasiveDamage()
     {
         timerDamage -= Time.deltaTime;
+
         if (timerDamage <= 0)
         {
-            hp = hp - damage;
+            hpActual = hpActual - damage;
             MostrarTextoDaño(damage);
             timerDamage = timeDamage;
         }
@@ -135,5 +172,10 @@ public class Arbol : MonoBehaviour
     void SonidoCaida()
     {
         audioSource.PlayOneShot(sonidoCaida);
+    }
+
+    public void AumentarDamage()
+    {
+        timeDamage = timeDamage - oleadaActual;
     }
 }
