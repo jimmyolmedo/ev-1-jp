@@ -356,6 +356,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "le\xF1ador"
       objectReference: {fileID: 0}
+    - target: {fileID: 6008145244883809956, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6347993385127713603, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.6939948
@@ -427,7 +431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8653719598885068355, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8002856854453265432, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
       propertyPath: m_Name

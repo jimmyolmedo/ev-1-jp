@@ -10,9 +10,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] arboles;
 
-    public IntVariable madera;
+    public float dinero;
 
-    public int numOleada = 1;
+    public float numOleada = 1;
 
     public int contEnemy;
 
@@ -70,9 +70,9 @@ public class GameManager : MonoBehaviour
         onGameRestart.Invoke();
     }
 
-    public void AgregarMadera(int _cantidad)
+    public void AgregarDinero(float _cantidad)
     {
-        madera.valor += _cantidad;
+        dinero = dinero + _cantidad;
     }
 
     public void AumentarDamageArbol()
@@ -81,6 +81,11 @@ public class GameManager : MonoBehaviour
         {
             arboles[i].gameObject.GetComponent<Arbol>().AumentarDamage();
         }
+    }
+
+    public void GastarDinero(float _cantidad)
+    {
+        dinero = dinero - _cantidad;
     }
 
 }

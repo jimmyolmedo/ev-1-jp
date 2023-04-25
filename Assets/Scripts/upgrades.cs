@@ -6,6 +6,9 @@ using UnityEngine.Events;
 public class upgrades : MonoBehaviour
 {
 
+    public float dineroCompra;
+    public float aumentoCosto;
+
     public UnityEvent compra;
 
     public GameObject player;
@@ -19,6 +22,8 @@ public class upgrades : MonoBehaviour
     public float aumentoVida;
     public float costoVida;
 
+    public bool comprando;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,25 +33,41 @@ public class upgrades : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        dineroCompra = GameManager.gm.dinero;
+        if (comprando)
         {
             compra.Invoke();
         }
     }
 
 
-    public void aumentarSpeed()
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+       if (collision.gameObject.CompareTag("Player"))
+       {
+           comprando = true;
+       }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        comprando = false;
+    }
+
+
+    public void aumentarSpeed()
+    { 
         if (Input.GetButtonDown("Fire1"))
         {
-            player.gameObject.GetComponent<Player>().AumentarVelocidad(aumentoVel);
+            for(int i = 0; i < 1; i++)
+            {
+                if (dineroCompra >= costovel)
+                {
+                    GameManager.gm.GastarDinero(costovel);
+                    player.gameObject.GetComponent<Player>().AumentarVelocidad(aumentoVel);
+                    costovel = costovel + aumentoCosto;
+                }
+            }
         }
     }
 
@@ -54,7 +75,15 @@ public class upgrades : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            player.gameObject.GetComponent<Player>().hacha.AumentarDamage(aumentoDamage);
+            for (int i = 0; i < 1; i++)
+            {
+                if (dineroCompra >= costoDamage)
+                {
+                    GameManager.gm.GastarDinero(costoDamage);
+                    player.gameObject.GetComponent<Player>().hacha.AumentarDamage(aumentoDamage);
+                    costoDamage = costoDamage + aumentoCosto;
+                }
+            }
         }
 
     }
@@ -63,7 +92,15 @@ public class upgrades : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire1"))
         {
-            player.gameObject.GetComponent<Player>().AumentarHp(aumentoVida);
+            for (int i = 0; i < 1; i++)
+            {
+                if (dineroCompra >= costoVida)
+                {
+                    GameManager.gm.GastarDinero(costoVida);
+                    player.gameObject.GetComponent<Player>().AumentarHp(aumentoVida);
+                    costoVida = costoVida + aumentoCosto;
+                }
+            }
         }
     }
 

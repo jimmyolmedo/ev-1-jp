@@ -88,7 +88,6 @@ MonoBehaviour:
   animator: {fileID: 0}
   rb: {fileID: 4091267806182054601}
   bc: {fileID: 4091267806182054600}
-  circleCollider2D: {fileID: 4091267806182054602}
   caminando: 1
   callendo: 1
   puedoAtacar: 1
@@ -121,7 +120,7 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4091267806182054597}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1

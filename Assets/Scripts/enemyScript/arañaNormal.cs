@@ -5,7 +5,7 @@ using UnityEngine;
 public class arañaNormal : MonoBehaviour
 {
 
-    public int nivel;
+    public float nivel;
     public float vida;
 
 
@@ -22,7 +22,6 @@ public class arañaNormal : MonoBehaviour
     public Animator animator;
     public Rigidbody2D rb;
     public BoxCollider2D bc;
-    public CircleCollider2D circleCollider2D;
 
     public bool caminando = true;
     public bool callendo = true;
@@ -108,6 +107,7 @@ public class arañaNormal : MonoBehaviour
                 puedoAtacar = false;
                 animator.Play("muerte");
                 GameManager.gm.contEnemy++;
+                drop();
                 muerto = true;
             }
         }
@@ -183,10 +183,21 @@ public class arañaNormal : MonoBehaviour
     public void AumentoNivel()
     {
         nivel = GameManager.gm.numOleada;
+        if(nivel != 1)
+        {
+            speed = speed + nivel;
 
-        speed = speed + nivel;
+            damage = damage + nivel;
 
-        damage = damage + nivel;
+            vida = vida + nivel;
+        }
+    }
+
+    public void drop()
+    {
+        float cantidad = Random.Range(1, 3);
+
+        GameManager.gm.AgregarDinero(cantidad);
 
     }
 

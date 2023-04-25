@@ -5,7 +5,7 @@ using UnityEngine;
 public class spawnEnemy : MonoBehaviour
 {
 
-    public int oleada;
+    public float oleada;
     public int spawnMax;
     public int arbolCaidos;
     public int spawnPorOleada = 15;
@@ -176,11 +176,11 @@ public class spawnEnemy : MonoBehaviour
     {
         if(spawnPorOleada > 0)
         {
-            if (oleada <= 3)
+            if (oleada < 3)
             {
                 Spawnear();
             }
-            else if (oleada <= 6)
+            else if (oleada < 6)
             {
                 SpawnearLv2();
             }
