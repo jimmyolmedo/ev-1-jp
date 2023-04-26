@@ -5,23 +5,38 @@ using TMPro;
 
 public class UIManager : MonoBehaviour
 {
-    public IntVariable hpHacha;
-    public IntVariable dañoHacha;
-    public IntVariable gastoPorGolpe;
-    public IntVariable lvlHacha;
-    public IntVariable madera;
+    public float vidaPlayer;
+    public float velocidad;
+    public float daño;
+    public float dinero;
 
-    public TextMeshProUGUI hpHachaTxt, dañohachaTxt, gastoPorGolpeTxt, lvlHachaTxt, cantMadera;
+    public GameObject player;
+    public GameObject hacha;
+
+    public TextMeshProUGUI hpTxt, dañoTxt, velocidadTxt, dineroTxt;
 
     private void Update()
     {
-        hpHachaTxt.text = "HP Hacha " + hpHacha.valor.ToString();
-        dañohachaTxt.text = "Daño Hacha " + dañoHacha.valor.ToString();
-        gastoPorGolpeTxt.text = "Gasto por Golpe " + gastoPorGolpe.valor.ToString();
-        lvlHachaTxt.text = "LVL Hacha " + lvlHacha.valor.ToString();
 
-        cantMadera.text = madera.valor.ToString();
+        Variables();
+
+        hpTxt.text = "HP: " + vidaPlayer.ToString();
+        dañoTxt.text = "Daño: " + daño.ToString();
+        velocidadTxt.text = "velocidad: " + velocidad.ToString();
+        dineroTxt.text = dinero.ToString();
+
     }
 
+
+    public void Variables()
+    {
+        vidaPlayer = player.gameObject.GetComponent<Player>().vidaActual;
+
+        velocidad = player.gameObject.GetComponent<Player>().velocidadMovimiento;
+
+        daño = hacha.gameObject.GetComponent<Hacha>().dañoHacha;
+
+        dinero = GameManager.gm.dinero;
+    }
 
 }

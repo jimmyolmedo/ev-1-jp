@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class arañaNormal : MonoBehaviour
 {
 
     public float nivel;
     public float vida;
+
+    public UnityEvent caer;
 
 
     public float speed;
@@ -69,7 +72,7 @@ public class arañaNormal : MonoBehaviour
                 {
                     damagePlayer = collision.gameObject.GetComponent<Hacha>().dañoHacha;
                     Golpe();
-                    Empujar(collision.transform.position.x);                          //activa la funcion Empujar y toma la posicion de x del hacha
+                    Empujar(player.transform.position.x);                          //activa la funcion Empujar y toma la posicion de x del hacha
                 }
                 if (collision.gameObject.CompareTag("Player"))
                 {
@@ -78,6 +81,12 @@ public class arañaNormal : MonoBehaviour
                         animator.Play("atacar");
                     }
                 }
+                if (collision.gameObject.CompareTag("suelo"))
+                {
+                    caer.Invoke();
+
+                }
+
             }
         }
     }
@@ -93,6 +102,7 @@ public class arañaNormal : MonoBehaviour
                 callendo = false;
                 rb.gravityScale = 0;
                 animator.Play("caminar");
+                caer.Invoke();
             }
         }
     }

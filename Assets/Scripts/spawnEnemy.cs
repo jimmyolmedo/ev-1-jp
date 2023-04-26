@@ -9,7 +9,7 @@ public class spawnEnemy : MonoBehaviour
     public int spawnMax;
     public int arbolCaidos;
     public int spawnPorOleada = 15;
-    public float tiempoMenos = 1;
+    public float tiempoMenos = 2;
 
     public GameObject[] enemys;
     public GameObject enemy1;
@@ -151,7 +151,6 @@ public class spawnEnemy : MonoBehaviour
         {
             if(puedeSpawnear == true)
             {
-                tiempoMenos++;
                 puedeSpawnear = false;
                 arbolCaidos = 0;
             }
