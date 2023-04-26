@@ -59,9 +59,9 @@ public class spawnEnemy : MonoBehaviour
         int randomT = Random.Range(0, spawn.Length);
         int randomG = Random.Range(0, enemys.Length);
 
-         
-            if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false)
-            {
+
+        if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false && spawn[randomT].gameObject.GetComponent<Arbol>().muerto == false)
+        {
             //Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
 
             spawn[randomT].gameObject.GetComponent<Arbol>().enemyActual = enemys[randomG];
@@ -89,7 +89,7 @@ public class spawnEnemy : MonoBehaviour
         int randomG = Random.Range(0, enemys.Length);
 
 
-        if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false)
+        if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false && spawn[randomT].gameObject.GetComponent<Arbol>().muerto == false)
         {
             //Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
 
@@ -118,8 +118,8 @@ public class spawnEnemy : MonoBehaviour
         int randomT = Random.Range(0, spawn.Length);
         int randomG = Random.Range(0, enemys.Length);
 
-
-        if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false)
+        //pregunto si el arbol no esta ocupado ni muerto, ejecutar el spawn
+        if (spawn[randomT].gameObject.GetComponent<Arbol>().ocupado == false && spawn[randomT].gameObject.GetComponent<Arbol>().muerto == false)
         {
             //Instantiate(enemys[randomG], spawn[randomT].position, Quaternion.Euler(0, 0, 0));
 

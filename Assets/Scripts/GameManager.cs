@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     public float numOleada = 1;
 
     public int contEnemy;
+    public int arbolesMuertos;
 
     public GameObject spawner;
     public GameObject looby;

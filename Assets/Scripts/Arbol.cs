@@ -20,6 +20,7 @@ public class Arbol : MonoBehaviour
     public AudioSource audioSource;
 
     public bool ocupado;
+    public bool muerto;
 
     public Transform lugarSpawn;
 
@@ -60,6 +61,19 @@ public class Arbol : MonoBehaviour
     private void Update()
     {
 
+        if(muerto == false)
+        {
+            oleadaActual = GameManager.gm.numOleada;
+
+            barraVida.value = hpActual;
+
+            if (ocupado)
+            {
+                animator.Play("agitarHojas");
+                PasiveDamage();
+            }
+        }
+        /*
         oleadaActual = GameManager.gm.numOleada;
 
         barraVida.value = hpActual;
@@ -69,11 +83,22 @@ public class Arbol : MonoBehaviour
             animator.Play("agitarHojas");
             PasiveDamage();
         }
-       /* else
+         */
+
+
+        if (hpActual < 1)             
         {
-            animator.Play("New State");
+            if(muerto == false)
+            {
+                if (ocupado)
+                {
+                    GameObject.Find("SPAWNERS").gameObject.GetComponent<spawnEnemy>().BajarSpawn();
+                }
+                GameManager.gm.arbolesMuertos++;
+                Muere();
+                muerto = true;
+            }
         }
-        */
     }
 
 

@@ -7044,6 +7044,11 @@ MonoBehaviour:
   - {x: 0.5, y: -0.5, z: 0}
   - {x: 0.5, y: 0.5, z: 0}
   - {x: -0.5, y: 0.5, z: 0}
+--- !u!61 &1434223626 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 479276655, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
+  m_PrefabInstance: {fileID: 8282887391214705656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1441784880
 GameObject:
   m_ObjectHideFlags: 0
@@ -8341,6 +8346,7 @@ MonoBehaviour:
   dinero: 0
   numOleada: 1
   contEnemy: 0
+  arbolesMuertos: 0
   spawner: {fileID: 1955895385}
   looby: {fileID: 268541113}
 --- !u!4 &1732954613
@@ -9304,7 +9310,7 @@ MonoBehaviour:
   - {fileID: 2021770910}
   - {fileID: 380061597}
   - {fileID: 1338360982}
-  tiempoSpawn: 13
+  tiempoSpawn: 1
   timerSpawn: 0
   puedeSpawnear: 1
 --- !u!4 &1955895387
@@ -10007,6 +10013,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 837003931}
     m_Modifications:
+    - target: {fileID: 479276653, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479276653, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
+      propertyPath: onDead.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 352661942012818015, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -10110,6 +10124,10 @@ PrefabInstance:
     - target: {fileID: 8282887390871893394, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
       propertyPath: m_Name
       value: Arbol (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8282887390871893394, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8282887390871893395, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
       propertyPath: m_RootOrder
@@ -13284,6 +13302,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 837003931}
     m_Modifications:
+    - target: {fileID: 479276653, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
+      propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 1434223626}
+    - target: {fileID: 479276653, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
+      propertyPath: onDead.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
     - target: {fileID: 352661942012818015, guid: 22e8aebcaafb0cf45a0b3ba442d25a1b, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
