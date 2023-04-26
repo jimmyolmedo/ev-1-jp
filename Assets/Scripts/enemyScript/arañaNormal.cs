@@ -10,6 +10,7 @@ public class arañaNormal : MonoBehaviour
     public float vida;
 
     public UnityEvent caer;
+    public UnityEvent muerte;
 
 
     public float speed;
@@ -113,6 +114,7 @@ public class arañaNormal : MonoBehaviour
         {
             if(muerto == false)
             {
+                muerte.Invoke();
                 caminando = false;
                 puedoAtacar = false;
                 animator.Play("muerte");

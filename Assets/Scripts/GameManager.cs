@@ -34,9 +34,8 @@ public class GameManager : MonoBehaviour
             if(numOleada % 2 != 0)
             {
                 spawner.gameObject.GetComponent<spawnEnemy>().aumentarSpawn();
+                AumentarDamageArbol();
             }
-
-            AumentarDamageArbol();
 
             contEnemy = 0;
         }
