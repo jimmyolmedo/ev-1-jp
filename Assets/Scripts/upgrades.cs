@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
+using TMPro;
 
 public class upgrades : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class upgrades : MonoBehaviour
     public float aumentoCosto;
 
     public UnityEvent compra;
+    public UnityEvent noCompra;
 
     public GameObject player;
 
@@ -23,6 +26,15 @@ public class upgrades : MonoBehaviour
     public float costoVida;
 
     public bool comprando;
+    public bool hp;
+    public bool damage;
+    public bool vel;
+    public bool reparar;
+
+    public TMP_Text textCosto;
+
+    public float costoReparar;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,10 +45,17 @@ public class upgrades : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ActualizarTextos();
+
+
         dineroCompra = GameManager.gm.dinero;
         if (comprando)
         {
             compra.Invoke();
+        }
+        else
+        {
+            noCompra.Invoke();
         }
     }
 
@@ -109,6 +128,44 @@ public class upgrades : MonoBehaviour
         if (Input.GetButtonDown("Fire1"))
         {
             GameManager.gm.contEnemy = 15;
+        }
+    }
+
+
+    public void ActualizarTextos()
+    {
+        if(hp == true)
+        {
+            textCosto.text = "-" + costoVida.ToString();
+        }
+         if(vel == true)
+        {
+            textCosto.text = "-" + costovel.ToString();
+        }
+         if(damage == true)
+        {
+            textCosto.text = "-" + costoDamage.ToString();
+        }
+         if(reparar == true)
+        {
+            textCosto.text = "-" + costoReparar.ToString();
+        }
+    }
+
+
+    public void ReparacionArbol()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            for (int i = 0; i < 1; i++)
+            {
+                if (dineroCompra >= costoReparar)
+                {
+                    GameManager.gm.GastarDinero(costoReparar);
+                    player.gameObject.GetComponent<Player>().repararArbol = true;
+                    costoReparar = costoReparar + aumentoCosto;
+                }
+            }
         }
     }
 

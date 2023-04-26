@@ -8,11 +8,12 @@ using UnityEngine.UI;
 
 public class Arbol : MonoBehaviour
 {
-    public int hpActual;
-    public int hpMax;
+    public float hpActual;
+    public float hpMax;
     public UnityEvent onHit, onDead, onCaida;
     public Animator animator;
     public TextMeshPro textoDaño;
+    public TextMeshPro textoReparar;
     public int dropValue;
 
     public AudioClip sonidoCaida;
@@ -26,7 +27,7 @@ public class Arbol : MonoBehaviour
 
     public GameObject canvas;
 
-    public int damage;
+    public float damage;
 
     public float oleadaActual;
 
@@ -107,7 +108,7 @@ public class Arbol : MonoBehaviour
 
 
 
-    void MostrarTextoDaño(int cantidad)
+    void MostrarTextoDaño(float cantidad)
     {
         textoDaño.gameObject.SetActive(false);      // apagar texto para que se resetee la animación
         textoDaño.text = "- " + cantidad.ToString();       // actualizar la cantidad de daño en el texto
@@ -140,12 +141,23 @@ public class Arbol : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             canvas.SetActive(true);
+            if(collision.gameObject.GetComponent<Player>().repararArbol == true)
+            {
+                textoReparar.gameObject.SetActive(true);
+
+                if (Input.GetButtonDown("Fire1"))
+                {
+                    collision.gameObject.GetComponent<Player>().repararArbol = false;
+                    recuperar();
+                }
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         canvas.SetActive(false);
+        textoReparar.gameObject.SetActive(false);
     }
 
 
@@ -177,5 +189,13 @@ public class Arbol : MonoBehaviour
     public void AumentarDamage()
     {
         timeDamage = timeDamage - oleadaActual;
+        damage = damage + oleadaActual;
     }
+
+    public void recuperar()
+    {
+        hpActual = hpMax;
+        textoReparar.gameObject.SetActive(false);
+    }
+
 }

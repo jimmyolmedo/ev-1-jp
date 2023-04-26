@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "ara\xF1a blindada"
       objectReference: {fileID: 0}
+    - target: {fileID: -8002856854453265432, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ1_1
+      objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -295,6 +299,10 @@ PrefabInstance:
     - target: {fileID: -7552582706839291426, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6953309628919093320, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ2_1
       objectReference: {fileID: 0}
     - target: {fileID: 7766596534807217741, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
       propertyPath: m_LocalRotation.w

@@ -25,7 +25,7 @@ public class Player : MonoBehaviour
 
     public Rigidbody2D rb;
 
-
+    public bool repararArbol;           //se activara al comprar la reparacion del arbol
 
 
     private void Start()
