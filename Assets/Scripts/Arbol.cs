@@ -213,7 +213,7 @@ public class Arbol : MonoBehaviour
 
     public void AumentarDamage()
     {
-        timeDamage = timeDamage - 3;
+        //timeDamage = timeDamage - 3;
         damage = damage + 3;
     }
 
