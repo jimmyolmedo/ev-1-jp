@@ -241,6 +241,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1140152091
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_Name
+      value: "ara\xF1aParent"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.0066185
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.858776
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4091267806182054598, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
 --- !u!1001 &1897199138
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -300,9 +357,61 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7162696689594910546, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ1
+      objectReference: {fileID: 0}
     - target: {fileID: -6953309628919093320, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
       propertyPath: m_Name
       value: piernaIZ2_1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6873458488190408945, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: cuerpo2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6054051227479233525, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: cabeza
+      objectReference: {fileID: 0}
+    - target: {fileID: -5267961316067255303, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: colmillo
+      objectReference: {fileID: 0}
+    - target: {fileID: -4688627467887156517, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: piernaDE2
+      objectReference: {fileID: 0}
+    - target: {fileID: -721753946514977911, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: PiernaDE3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1921145645652776261, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1958760560476766075, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: piernaDE
+      objectReference: {fileID: 0}
+    - target: {fileID: 2308335230997180423, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: piernaIZ4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3551940272406826641, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: PiernaIZ3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4686781366121752554, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: PiernaDE4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273189827969731738, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: cuerpo3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943260302857054993, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_Name
+      value: ojos
       objectReference: {fileID: 0}
     - target: {fileID: 7766596534807217741, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
       propertyPath: m_LocalRotation.w
