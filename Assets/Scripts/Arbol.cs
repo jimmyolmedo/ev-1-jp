@@ -224,4 +224,10 @@ public class Arbol : MonoBehaviour
         textoReparar.gameObject.SetActive(false);
     }
 
+
+    public void ocupar()
+    {
+        ocupado = true;
+    }
+
 }

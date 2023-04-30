@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class arañaNormal : MonoBehaviour
 {
@@ -32,6 +33,9 @@ public class arañaNormal : MonoBehaviour
     public bool puedoAtacar = true;
     public bool muerto;
 
+    public int cantDinero;
+
+    public TextMeshPro textDinero;
 
     // Start is called before the first frame update
     void Start()
@@ -207,12 +211,16 @@ public class arañaNormal : MonoBehaviour
 
     public void drop()
     {
-        float cantidad = Random.Range(1, 3);
+        int cantidad = Random.Range(1, cantDinero);
 
         GameManager.gm.AgregarDinero(cantidad);
 
-    }
+        textDinero.gameObject.SetActive(false);      // apagar texto para que se resetee la animación
+        textDinero.text = "+ " + cantidad.ToString();       // actualizar la cantidad de daño en el texto
+        Debug.Log("pa casa platita");
+        textDinero.gameObject.SetActive(true);       // prender el texto para que muestre cuanto se le quito
 
+    }
 
 
 }

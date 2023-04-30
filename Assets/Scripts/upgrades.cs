@@ -9,7 +9,7 @@ public class upgrades : MonoBehaviour
 {
 
     public float dineroCompra;
-    public float aumentoCosto;
+    public int aumentoCosto;
 
     public UnityEvent compra;
     public UnityEvent noCompra;
@@ -17,13 +17,13 @@ public class upgrades : MonoBehaviour
     public GameObject player;
 
     public float aumentoVel;
-    public float costovel;
+    public int costovel;
 
     public float aumentoDamage;
-    public float costoDamage;
+    public int costoDamage;
 
     public float aumentoVida;
-    public float costoVida;
+    public int costoVida;
 
     public bool comprando;
     public bool hp;
@@ -33,7 +33,7 @@ public class upgrades : MonoBehaviour
 
     public TMP_Text textCosto;
 
-    public float costoReparar;
+    public int costoReparar;
 
 
     // Start is called before the first frame update

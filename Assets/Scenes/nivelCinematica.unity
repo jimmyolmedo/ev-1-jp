@@ -3396,7 +3396,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   tecla: 13
-  escena: SampleScene
+  escena: tutorial
 --- !u!61 &688978161
 BoxCollider2D:
   m_ObjectHideFlags: 0

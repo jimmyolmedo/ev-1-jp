@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] arboles;
 
-    public float dinero;
+    public int dinero;
 
     public float numOleada = 1;
 
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
         onGameRestart.Invoke();
     }
 
-    public void AgregarDinero(float _cantidad)
+    public void AgregarDinero(int _cantidad)
     {
         dinero = dinero + _cantidad;
     }
@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void GastarDinero(float _cantidad)
+    public void GastarDinero(int _cantidad)
     {
         dinero = dinero - _cantidad;
     }
