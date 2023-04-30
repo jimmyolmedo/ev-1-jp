@@ -34083,7 +34083,7 @@ MonoBehaviour:
   enemys: []
   enemy1: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
   enemy2: {fileID: 6168124231947456551, guid: bce5f6a6408b6404fb1585fbcdee97c2, type: 3}
-  enemy3: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+  enemy3: {fileID: 5659355516839418346, guid: ed682b01d90c51c4e8c6e572eb953262, type: 3}
   spawn:
   - {fileID: 479276656}
   - {fileID: 580993166}

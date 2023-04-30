@@ -179,7 +179,7 @@ public class spawnEnemy : MonoBehaviour
             {
                 Spawnear();
             }
-            else if (oleada < 6)
+            else if (oleada < 5)
             {
                 SpawnearLv2();
             }

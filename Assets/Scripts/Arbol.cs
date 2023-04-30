@@ -93,6 +93,7 @@ public class Arbol : MonoBehaviour
                 if (ocupado)
                 {
                     GameObject.Find("SPAWNERS").gameObject.GetComponent<spawnEnemy>().BajarSpawn();
+                    GameManager.gm.contEnemy++;
                 }
                 GameManager.gm.arbolesMuertos++;
                 Muere();
