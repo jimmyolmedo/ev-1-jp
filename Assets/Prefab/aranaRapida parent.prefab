@@ -266,6 +266,9 @@ MonoBehaviour:
   callendo: 1
   puedoAtacar: 1
   muerto: 0
+  normal: 0
+  rapida: 1
+  blindada: 0
   cantDinero: 5
   textDinero: {fileID: 9022133800802038854}
 --- !u!50 &6168124231947456544

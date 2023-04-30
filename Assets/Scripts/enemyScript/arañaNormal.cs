@@ -32,6 +32,9 @@ public class arañaNormal : MonoBehaviour
     public bool callendo = true;
     public bool puedoAtacar = true;
     public bool muerto;
+    public bool normal;
+    public bool rapida;
+    public bool blindada;
 
     public int cantDinero;
 
@@ -42,6 +45,7 @@ public class arañaNormal : MonoBehaviour
     {
 
         AumentoNivel();
+        SumarEnemy();
 
 
         player = GameObject.Find("leñador");               //busca al leñador para llenar la variable player
@@ -124,6 +128,7 @@ public class arañaNormal : MonoBehaviour
                 animator.Play("muerte");
                 GameManager.gm.contEnemy++;
                 drop();
+                RestarEnemy();
                 muerto = true;
             }
         }
@@ -222,5 +227,41 @@ public class arañaNormal : MonoBehaviour
 
     }
 
+    public void SumarEnemy()
+    {
+        if (normal)
+        {
+            GameManager.gm.normal++;
+        }
+        else if (rapida)
+        {
+            GameManager.gm.rapida++;
+        }
+        else if (blindada)
+        {
+            GameManager.gm.blindada++;
+        }
+    }
 
+
+    public void RestarEnemy()
+    {
+        if (normal)
+        {
+            GameManager.gm.normal--;
+        }
+        else if (rapida)
+        {
+            GameManager.gm.rapida--;
+        }
+        else if (blindada)
+        {
+            GameManager.gm.blindada--;
+        }
+    }
+
+    public void destruir()
+    {
+        Destroy(gameObject);
+    }
 }

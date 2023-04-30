@@ -20,6 +20,10 @@ public class GameManager : MonoBehaviour
     public GameObject spawner;
     public GameObject looby;
 
+    public int normal;
+    public int rapida;
+    public int blindada;
+
     private void Awake()
     {
         gm = this;
@@ -87,5 +91,24 @@ public class GameManager : MonoBehaviour
     {
         dinero = dinero - _cantidad;
     }
+
+
+    public void EliminarEnemys()
+    {
+        for(int i = 0; i < normal; i++)
+        {
+            GameObject.Find("arañaParent(Clone)").gameObject.GetComponent<arañaNormal>().destruir();
+        }
+        for (int i = 0; i < rapida; i++)
+        {
+            GameObject.Find("aranaRapida parent(Clone)").gameObject.GetComponent<arañaNormal>().destruir();
+        }
+        for (int i = 0; i < blindada; i++)
+        {
+            GameObject.Find("arañaBlindadaParent(Clone)").gameObject.GetComponent<arañaNormal>().destruir();
+        }
+
+    }
+
 
 }

@@ -32983,6 +32983,9 @@ MonoBehaviour:
   arbolesMuertos: 0
   spawner: {fileID: 1955895385}
   looby: {fileID: 268541113}
+  normal: 0
+  rapida: 0
+  blindada: 0
 --- !u!4 &1732954613
 Transform:
   m_ObjectHideFlags: 0
@@ -35586,6 +35589,26 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4875464975521099463, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
   m_PrefabInstance: {fileID: 6090827792797805816}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1670789330534203968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1754141294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9877143a2a4ddf548b34676c02e40938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  presionarTecla:
+    m_PersistentCalls:
+      m_Calls: []
+  entrarTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  tecla: 0
+  escena: you lose
 --- !u!1 &2068079156092525577
 GameObject:
   m_ObjectHideFlags: 0
@@ -36385,6 +36408,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1587199705448702743, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587199705448702743, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000095213984
+      objectReference: {fileID: 0}
+    - target: {fileID: 4875464975521099450, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: vidaMax
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 4875464975521099463, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -36432,6 +36467,46 @@ PrefabInstance:
     - target: {fileID: 6008145244883809956, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
       propertyPath: m_Name
       value: "le\xF1ador"
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347993385127713603, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.6939949
+      objectReference: {fileID: 0}
+    - target: {fileID: 6347993385127713603, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.71998
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881078564731995928, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8842279
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881078564731995928, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6881078564731995928, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.4670558
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706224108138780992, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.91921437
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706224108138780992, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7706224108138780992, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.39375755
+      objectReference: {fileID: 0}
+    - target: {fileID: 8087605842157467444, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8087605842157467444, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000018445635
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3acc790cd07b29e4b935d41d0f141c79, type: 3}

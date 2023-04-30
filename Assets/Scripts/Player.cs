@@ -44,7 +44,9 @@ public class Player : MonoBehaviour
             vidaActual = vidaMax;
         }
 
-        if(movimiento)
+        Morir();
+
+        if (movimiento)
             Mover();
 
         if(golpear)
@@ -156,6 +158,16 @@ public class Player : MonoBehaviour
     public void RecibirDamage()
     {
         vidaActual = vidaActual - damageEnemy;
+    }
+
+
+    public void Morir()
+    {
+        if(vidaActual <= 0)
+        {
+            GameManager.gm.EliminarEnemys();
+            animator.Play("muerte");
+        }
     }
 
 }
