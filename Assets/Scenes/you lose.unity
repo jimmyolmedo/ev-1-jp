@@ -1841,6 +1841,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 655af3de5c578c74f964bd2cb71ed9ae, type: 3}
+--- !u!1 &381096562 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4302880728313454857, guid: 655af3de5c578c74f964bd2cb71ed9ae, type: 3}
+  m_PrefabInstance: {fileID: 381096561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &381096563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381096562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9877143a2a4ddf548b34676c02e40938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  presionarTecla:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 381096563}
+        m_TargetAssemblyTypeName: Activaciones, Assembly-CSharp
+        m_MethodName: cambiarescena
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  entrarTrigger:
+    m_PersistentCalls:
+      m_Calls: []
+  tecla: 13
+  escena: SampleScene
 --- !u!1 &413246600
 GameObject:
   m_ObjectHideFlags: 0
@@ -9397,8 +9434,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 4013328375529187276}
   m_Bounds:
-    m_Center: {x: 6.403168, y: -5.816799, z: 0}
-    m_Extent: {x: 0.7696943, y: 0.6943126, z: 0}
+    m_Center: {x: 6.426142, y: -5.8699636, z: 0}
+    m_Extent: {x: 0.7771902, y: 0.66287374, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -9651,8 +9688,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 4530355235753360115}
   m_Bounds:
-    m_Center: {x: 4.1935554, y: -3.0013695, z: 0}
-    m_Extent: {x: 1.1280055, y: 1.1385475, z: 0}
+    m_Center: {x: 4.190637, y: -2.9986753, z: 0}
+    m_Extent: {x: 1.1306933, y: 1.1356698, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -9679,7 +9716,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2809366433062890601}
-  m_LocalRotation: {x: 0, y: 0, z: 0.037049502, w: 0.9993135}
+  m_LocalRotation: {x: -0, y: -0, z: -0.008929251, w: 0.9999601}
   m_LocalPosition: {x: 3.9027925, y: 0.000000031939024, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -9687,7 +9724,7 @@ Transform:
   - {fileID: 2675873164916537316}
   m_Father: {fileID: 4465417277117777019}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -1.023}
 --- !u!1 &4073872424852719853
 GameObject:
   m_ObjectHideFlags: 0
@@ -9824,8 +9861,8 @@ MonoBehaviour:
   m_BoneTransforms:
   - {fileID: 2675873164916537316}
   m_Bounds:
-    m_Center: {x: 6.995984, y: -6.252575, z: 0}
-    m_Extent: {x: 1.0990238, y: 1.1209517, z: 0}
+    m_Center: {x: 7.0094633, y: -6.3750916, z: 0}
+    m_Extent: {x: 1.0997543, y: 1.0815241, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
@@ -9836,14 +9873,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8749605025978499484}
-  m_LocalRotation: {x: 0, y: 0, z: 0.04679019, w: 0.9989048}
+  m_LocalRotation: {x: -0, y: -0, z: 0.045249898, w: 0.9989757}
   m_LocalPosition: {x: 2.0625205, y: -0.00000034651958, z: 0}
   m_LocalScale: {x: 0.99999976, y: 0.99999976, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1285986746384399083}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.187}
 --- !u!1 &4636665962928918340
 GameObject:
   m_ObjectHideFlags: 0

@@ -795,6 +795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: colmillo
       objectReference: {fileID: 0}
+    - target: {fileID: -5267961316067255303, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+      propertyPath: m_TagString
+      value: ataqueEnemigo
+      objectReference: {fileID: 0}
     - target: {fileID: -4688627467887156517, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
       propertyPath: m_Name
       value: piernaDE2
@@ -1006,6 +1010,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4269878149344056760, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
   m_PrefabInstance: {fileID: 4058973949971954353}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1058396856413561160 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -5267961316067255303, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
+  m_PrefabInstance: {fileID: 4058973949971954353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &4617839314660998819
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058396856413561160}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.23720288, y: 1.3457487}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46, y: 0.82}
+    newSize: {x: 0.46, y: 0.82}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.420094, y: 4.4048486}
+  m_EdgeRadius: 0
 --- !u!4 &3421479276844778351 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: fb564b387731ad3419cef9cd223cbe5c, type: 3}
