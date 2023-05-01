@@ -26,6 +26,8 @@ public class Arbol : MonoBehaviour
 
     public GameObject enemyActual;
 
+    public GameObject player;
+
     public GameObject canvas;
 
     public float damage;
@@ -37,6 +39,16 @@ public class Arbol : MonoBehaviour
     public float timeDamage;
 
     public Slider barraVida;
+
+    public GameObject simbolo;
+
+    public GameObject SimboloDe;
+
+    public GameObject SimboloIz;
+
+    public bool enRango;
+
+    
 
 
     public void Start()
@@ -60,6 +72,16 @@ public class Arbol : MonoBehaviour
 
     private void Update()
     {
+
+        if(enRango == true)
+        {
+            ExclamarArbol();
+        }
+        if(enRango == false)
+        {
+            ExclamarCamara();
+        }
+
 
         if(muerto == false)
         {
@@ -147,10 +169,13 @@ public class Arbol : MonoBehaviour
         {
 
            if(ocupado == true)
-            {
+           {
                 CrearEnemy();
                 GameObject.Find("SPAWNERS").gameObject.GetComponent<spawnEnemy>().BajarSpawn();
                 animator.Play("Shake");
+                simbolo.SetActive(false);
+                SimboloDe.SetActive(false);
+                SimboloIz.SetActive(false);
             }
             
             
@@ -158,6 +183,12 @@ public class Arbol : MonoBehaviour
             //collision.GetComponent<Hacha>().Golpeo();                       // ejecuta la funcion Golpeo dentro del hacha
             // RecibirDaño(daño);                                              // Aplica daño al arbol
         }
+
+        if (collision.CompareTag("Player"))
+        {
+            enRango = true;
+        }
+       
     }
 
 
@@ -178,12 +209,17 @@ public class Arbol : MonoBehaviour
                 }
             }
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         canvas.SetActive(false);
         textoReparar.gameObject.SetActive(false);
+        if (collision.CompareTag("Player"))
+        {
+            enRango = false;
+        }
     }
 
 
@@ -228,6 +264,50 @@ public class Arbol : MonoBehaviour
     public void ocupar()
     {
         ocupado = true;
+    }
+
+
+    public void ExclamarArbol()
+    {
+        if(ocupado == true)
+        {
+            simbolo.SetActive(true);
+            SimboloDe.SetActive(false);
+            SimboloIz.SetActive(false);
+        }
+        else
+        {
+            simbolo.SetActive(false);
+        }
+    }
+
+    public void ExclamarCamara()
+    {
+        float playerPos = player.gameObject.transform.position.x;
+
+
+        if (ocupado == true)
+        {
+            if (playerPos > transform.position.x)
+            {
+                SimboloDe.SetActive(true);
+            }
+            else if(playerPos < transform.position.x)
+            {
+                SimboloIz.SetActive(true);
+            }
+        }
+        /*else
+        {
+            SimboloDe.SetActive(false);
+            SimboloIz.SetActive(false);
+        }*/
+    }
+
+
+    public void CalcularPosision()
+    {
+
     }
 
 }
