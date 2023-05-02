@@ -152,6 +152,10 @@ public class Arbol : MonoBehaviour
     void Muere()
     {
         onDead.Invoke();                            // cuando se queda sin hp se ejecuta este evento
+        ocupado = false;
+        simbolo.SetActive(false);
+        SimboloDe.SetActive(false);
+        SimboloIz.SetActive(false);
     }
 
 
