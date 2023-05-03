@@ -370,12 +370,17 @@ MonoBehaviour:
   muerto: 0
   lugarSpawn: {fileID: 1116685060}
   enemyActual: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+  player: {fileID: 0}
   canvas: {fileID: 1870004319286079260}
   damage: 5
   oleadaActual: 0
   timerDamage: 0
   timeDamage: 10
   barraVida: {fileID: 4815047815121830740}
+  simbolo: {fileID: 0}
+  SimboloDe: {fileID: 0}
+  SimboloIz: {fileID: 0}
+  enRango: 0
 --- !u!114 &14492284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -999,12 +1004,17 @@ MonoBehaviour:
   muerto: 0
   lugarSpawn: {fileID: 1195813277}
   enemyActual: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+  player: {fileID: 0}
   canvas: {fileID: 1870004319340184965}
   damage: 5
   oleadaActual: 0
   timerDamage: 0
   timeDamage: 10
   barraVida: {fileID: 4815047815058319821}
+  simbolo: {fileID: 0}
+  SimboloDe: {fileID: 0}
+  SimboloIz: {fileID: 0}
+  enRango: 0
 --- !u!95 &85248251
 Animator:
   serializedVersion: 5
@@ -2107,12 +2117,17 @@ MonoBehaviour:
   muerto: 0
   lugarSpawn: {fileID: 1453564540}
   enemyActual: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+  player: {fileID: 0}
   canvas: {fileID: 1870004319618780772}
   damage: 5
   oleadaActual: 0
   timerDamage: 0
   timeDamage: 10
   barraVida: {fileID: 4815047815324983852}
+  simbolo: {fileID: 0}
+  SimboloDe: {fileID: 0}
+  SimboloIz: {fileID: 0}
+  enRango: 0
 --- !u!114 &373619520
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2230,12 +2245,17 @@ MonoBehaviour:
   muerto: 0
   lugarSpawn: {fileID: 1410767399}
   enemyActual: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+  player: {fileID: 0}
   canvas: {fileID: 1870004319595001407}
   damage: 5
   oleadaActual: 0
   timerDamage: 0
   timeDamage: 10
   barraVida: {fileID: 4815047815346674295}
+  simbolo: {fileID: 0}
+  SimboloDe: {fileID: 0}
+  SimboloIz: {fileID: 0}
+  enRango: 0
 --- !u!95 &373619521
 Animator:
   serializedVersion: 5
@@ -3155,12 +3175,17 @@ MonoBehaviour:
   muerto: 0
   lugarSpawn: {fileID: 1612995177}
   enemyActual: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+  player: {fileID: 0}
   canvas: {fileID: 1870004319795099249}
   damage: 5
   oleadaActual: 0
   timerDamage: 0
   timeDamage: 10
   barraVida: {fileID: 4815047815685249593}
+  simbolo: {fileID: 0}
+  SimboloDe: {fileID: 0}
+  SimboloIz: {fileID: 0}
+  enRango: 0
 --- !u!95 &578173711
 Animator:
   serializedVersion: 5
@@ -4781,12 +4806,17 @@ MonoBehaviour:
   muerto: 0
   lugarSpawn: {fileID: 1929081568}
   enemyActual: {fileID: 4091267806182054597, guid: 06a2ee8dbbbbee142899481d1b3fe4b6, type: 3}
+  player: {fileID: 0}
   canvas: {fileID: 1870004320083779320}
   damage: 5
   oleadaActual: 0
   timerDamage: 0
   timeDamage: 10
   barraVida: {fileID: 4815047815924265648}
+  simbolo: {fileID: 0}
+  SimboloDe: {fileID: 0}
+  SimboloIz: {fileID: 0}
+  enRango: 0
 --- !u!114 &816386968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7906,6 +7936,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: "ara\xF1aJefe"
       objectReference: {fileID: 0}
+    - target: {fileID: -8653719598885068355, guid: 6371e95efe8580a4abfcbccdec70e426, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 6371e95efe8580a4abfcbccdec70e426, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -9102,6 +9136,63 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1689607727
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8653719598885068355, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_Name
+      value: aranaRapida (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.114298
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.6710787
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.12660591
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99195313
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -7552582706839291426, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 14.547
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 4843985084834002234, guid: c4ef2e3a30995904f8c69a744be670a0, type: 3}
 --- !u!1 &1704352250
 GameObject:
   m_ObjectHideFlags: 0
@@ -9852,6 +9943,10 @@ PrefabInstance:
     - target: {fileID: 6894827074562361847, guid: 655af3de5c578c74f964bd2cb71ed9ae, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 307
+      objectReference: {fileID: 0}
+    - target: {fileID: 6894827074562361849, guid: 655af3de5c578c74f964bd2cb71ed9ae, type: 3}
+      propertyPath: m_text
+      value: Spider Hunter
       objectReference: {fileID: 0}
     - target: {fileID: 6894827074562361849, guid: 655af3de5c578c74f964bd2cb71ed9ae, type: 3}
       propertyPath: m_margin.z

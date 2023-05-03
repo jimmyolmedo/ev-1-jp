@@ -170,4 +170,10 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void BajarVida()
+    {
+        vidaActual = 0;
+    }
+
+
 }

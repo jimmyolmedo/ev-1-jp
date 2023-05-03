@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public GameObject[] arboles;
 
+    public UnityEvent perdida;
+
     public int dinero;
 
     public float numOleada = 1;
@@ -31,6 +33,13 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+
+
+        if(arbolesMuertos >= arboles.Length)
+        {
+            perdida.Invoke();
+        }
+
         if(contEnemy >= 10)
         {
             numOleada++;
