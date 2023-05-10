@@ -17,6 +17,7 @@ public class Arbol : MonoBehaviour
     public int dropValue;
 
     public AudioClip sonidoCaida;
+    public AudioClip sonidoHojas; 
     public AudioSource audioSource;
 
     public bool ocupado;
@@ -313,5 +314,13 @@ public class Arbol : MonoBehaviour
     {
 
     }
+
+
+    public void SonidoAgitarHojas()
+    {
+        audioSource.clip = sonidoHojas;
+        audioSource.Play();
+    }
+
 
 }

@@ -8,10 +8,17 @@ public class cambiarEstado : MonoBehaviour
     public Transform posReal;
 
     public GameObject parent;
+
+    public AudioSource audioSource;
+
+    public AudioClip caminarClip;
+    public AudioClip golpeClip;
+    public AudioClip muerteClip;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponentInParent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -40,6 +47,26 @@ public class cambiarEstado : MonoBehaviour
     {
         Debug.Log("destruiste un enemigo!!");
         Destroy(parent.gameObject);
+    }
+
+
+    public void audioCaminar()
+    {
+        audioSource.clip = caminarClip;
+        audioSource.Play();
+    }
+
+
+    public void audioGolpe()
+    {
+        audioSource.clip = golpeClip;
+        audioSource.Play();
+    }
+
+    public void audioMuerte()
+    {
+        audioSource.clip = muerteClip;
+        audioSource.Play();
     }
 
 }

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
     public int normal;
     public int rapida;
     public int blindada;
+    public TextMeshPro textDinero;
 
     private void Awake()
     {
@@ -86,6 +88,16 @@ public class GameManager : MonoBehaviour
     public void AgregarDinero(int _cantidad)
     {
         dinero = dinero + _cantidad;
+
+    }
+
+
+    public void ActivarTextoDinero(int _cantidad)
+    {
+        textDinero.gameObject.SetActive(false);      // apagar texto para que se resetee la animación
+        textDinero.text = "+ " + _cantidad.ToString();       // actualizar la cantidad de daño en el texto
+        Debug.Log("pa casa platita");
+        textDinero.gameObject.SetActive(true);
     }
 
     public void AumentarDamageArbol()

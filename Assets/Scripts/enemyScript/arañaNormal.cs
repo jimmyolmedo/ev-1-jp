@@ -40,6 +40,13 @@ public class arañaNormal : MonoBehaviour
 
     public TextMeshPro textDinero;
 
+
+    public AudioSource audioSource;
+
+    public AudioClip golpeClip;
+    public AudioClip caminarClip;
+    public AudioClip muerteClip;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,6 +59,7 @@ public class arañaNormal : MonoBehaviour
         playerPos = player.transform;                      //toma la posicion del player                   
         animator = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
 
         Caer();
 
@@ -69,6 +77,9 @@ public class arañaNormal : MonoBehaviour
             Muerte();
             Movement();
         }
+
+        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -260,8 +271,30 @@ public class arañaNormal : MonoBehaviour
         }
     }
 
+    public void audioCaminar()
+    {
+        audioSource.clip = caminarClip;
+        audioSource.Play();
+    }
+
+
+    public void audioGolpe()
+    {
+        audioSource.clip = golpeClip;
+        audioSource.Play();
+    }
+
+    public void audioMuerte()
+    {
+        audioSource.clip = muerteClip;
+        audioSource.Play();
+    }
+
+
     public void destruir()
     {
         Destroy(gameObject);
     }
+
+
 }

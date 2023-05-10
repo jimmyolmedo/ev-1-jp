@@ -1167,6 +1167,7 @@ MonoBehaviour:
   textoReparar: {fileID: 443443877604905760}
   dropValue: 4
   sonidoCaida: {fileID: 8300000, guid: 761a7133babd91d4da37aa8547c6ed98, type: 3}
+  sonidoHojas: {fileID: 8300000, guid: e0f3cb62905e3a9478487d806de4fa56, type: 3}
   audioSource: {fileID: 0}
   ocupado: 0
   muerto: 0
