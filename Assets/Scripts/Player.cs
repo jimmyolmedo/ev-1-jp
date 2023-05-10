@@ -131,6 +131,7 @@ public class Player : MonoBehaviour
         }
 
         animator.Play("leñadorHurt");
+        animator.Play("golpeado");
         Invoke("DetenerEmpuje", 0.30f);
 
     }

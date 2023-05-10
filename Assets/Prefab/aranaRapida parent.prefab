@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nivel: 0
-  vida: 5
+  vida: 3
   caer:
     m_PersistentCalls:
       m_Calls:
