@@ -91,15 +91,6 @@ public class GameManager : MonoBehaviour
 
     }
 
-
-    public void ActivarTextoDinero(int _cantidad)
-    {
-        textDinero.gameObject.SetActive(false);      // apagar texto para que se resetee la animación
-        textDinero.text = "+ " + _cantidad.ToString();       // actualizar la cantidad de daño en el texto
-        Debug.Log("pa casa platita");
-        textDinero.gameObject.SetActive(true);
-    }
-
     public void AumentarDamageArbol()
     {
         for(int i = 0; i < arboles.Length; i++)
